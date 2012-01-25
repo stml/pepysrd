@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+body {
+	background: #3D2B1F;
+	color: #FFFDD0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 200%;
+	}
+h1, h2, h3, h4, ul, p, form, pre, div {
+	margin-bottom: 20px;
+	}
+pre, ul {
+	font-size: 50%;
+	}
+a {
+	color: #FFFDD0;
+	}
+	
+.container {	
+	width: 850px;
+	margin: 100px;
+	}
