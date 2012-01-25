@@ -92,7 +92,7 @@ function initialize(){
 
 <p><em>(Something encouraging...)</em></p>
 
-<form action="/sandbox/pepysrd/opening.php" method="post">
+<form action="opening.php" method="post">
 <p>I was born in <input id="birthyear" type="text" name="birthyear" value=" " /> and grew up in <input type="text" id="birthaddress" name="birthaddress" value=" " />. Now I live in <input type="text" id="currentaddress" name="currentaddress" value=" " /></p>
 <input type="hidden" id="birthlatitude" name="birthlatitude" value="" />
 <input type="hidden" id="birthlongitude" name="birthlongitude" value="" />

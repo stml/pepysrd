@@ -1,0 +1,472 @@
+Description,Code,Mean
+United Kingdom,,26871
+Great Britain,,27058
+England and Wales,,27292
+England,,27569
+North East,,22741
+Darlington UA,2,21627
+Hartlepool UA,4,23169
+Middlesbrough UA,5,19249
+Redcar and Cleveland UA,7,21123
+Stockton-on-Tees UA,8,23948
+County Durham,3,23280
+Chester-le-Street,322,26327
+Derwentside,324,23506
+Durham,325,23961
+Easington,326,20983
+Sedgefield,327,22627
+Teesdale,328,25229
+Wear Valley,329,22546
+Northumberland UA,6,25058
+Alnwick,458,x
+Berwick-upon-Tweed,459,22697
+Blyth Valley,460,23785
+Castle Morpeth,461,27302
+Tynedale,462,29581
+Wansbeck,463,20783
+Tyne and Wear MC,1,22234
+Gateshead,226,21921
+Newcastle upon Tyne,227,23212
+North Tyneside,228,22455
+South Tyneside,229,22489
+Sunderland,230,21349
+North West,,23787
+Blackburn with Darwen UA,14,21129
+Blackpool UA,15,17314
+Halton UA,10,22738
+Warrington UA,11,28446
+Cheshire,12,26711
+Cheshire East UA,601,27155
+Congleton,271,26745
+Crewe and Nantwich,272,22704
+Macclesfield,275,30743
+Cheshire West & Chester UA,602,26176
+Chester,270,25706
+Ellesmere Port and Neston,273,21850
+Vale Royal,276,29103
+Cumbria,13,21250
+Allerdale,289,19880
+Barrow-in-Furness,290,21069
+Carlisle,291,21001
+Copeland,292,21976
+Eden,293,19907
+South Lakeland,294,23220
+Greater Manchester MC,9,23475
+Bolton,207,22578
+Bury,208,24906
+Manchester,209,21255
+Oldham,210,22575
+Rochdale,211,22784
+Salford,212,22184
+Stockport,213,26529
+Tameside,214,21338
+Trafford,215,29066
+Wigan,216,22335
+Lancashire,16,23994
+Burnley,416,20523
+Chorley,417,23605
+Fylde,418,26863
+Hyndburn,419,22339
+Lancaster,420,25269
+Pendle,421,22465
+Preston,422,21977
+Ribble Valley,423,27889
+Rossendale,424,25206
+South Ribble,425,24650
+West Lancashire,426,25245
+Wyre,427,22703
+Merseyside,17,23628
+Knowsley,217,23806
+Liverpool,218,22924
+St. Helens,219,23496
+Sefton,220,22252
+Wirral,221,25648
+Yorkshire and The Humber,,23342
+East Riding of Yorkshire UA,20,25163
+Kingston upon Hull UA,21,18193
+North East Lincolnshire UA,22,21294
+North Lincolnshire UA,23,24526
+York UA,24,25561
+North Yorkshire,25,25942
+Craven,464,24112
+Hambleton,465,x
+Harrogate,466,25798
+Richmondshire,467,23486
+Ryedale,468,21421
+Scarborough,469,23206
+Selby,470,27737
+South Yorkshire MC,18,22562
+Barnsley,222,22447
+Doncaster,223,21991
+Rotherham,224,22322
+Sheffield,225,23051
+West Yorkshire MC,19,23260
+Bradford,238,21941
+Calderdale,239,22755
+Kirklees,240,23313
+Leeds,241,24870
+Wakefield,242,21512
+East Midlands,,24359
+Derby UA,26,23321
+Leicester UA,28,20027
+Nottingham UA,33,22416
+Rutland UA,29,30025
+Derbyshire,27,24917
+Amber Valley,295,25492
+Bolsover,296,22111
+Chesterfield,297,22787
+Derbyshire Dales,299,29628
+Erewash,300,23216
+High Peak,301,24749
+North East Derbyshire,302,25533
+South Derbyshire,303,26613
+Leicestershire,30,25355
+Blaby,428,26393
+Charnwood,429,24987
+Harborough,430,29529
+Hinckley and Bosworth,431,24259
+Melton,433,22769
+North West Leicestershire,434,25075
+Oadby and Wigston,435,24064
+Lincolnshire,31,22686
+Boston,437,19278
+East Lindsey,438,21621
+Lincoln,439,20710
+North Kesteven,440,23156
+South Holland,441,22592
+South Kesteven,442,26403
+West Lindsey,443,22292
+Northamptonshire,32,26041
+Corby,451,21683
+Daventry,452,33746
+East Northamptonshire,453,26546
+Kettering,454,24729
+Northampton,455,24294
+South Northamptonshire,456,30833
+Wellingborough,457,23239
+Nottinghamshire,34,24795
+Ashfield,472,21109
+Bassetlaw,473,24117
+Broxtowe,474,26210
+Gedling,475,25304
+Mansfield,476,20072
+Newark and Sherwood,477,22618
+Rushcliffe,479,33127
+West Midlands,,23675
+"Herefordshire, County of UA",36,21562
+Stoke-on-Trent UA,40,19739
+Telford and Wrekin UA,38,21848
+Shropshire UA,39,24996
+Bridgnorth,485,24911
+North Shropshire,486,27949
+Oswestry,487,22740
+Shrewsbury and Atcham,488,24142
+South Shropshire,489,24533
+Staffordshire,41,23684
+Cannock Chase,496,21475
+East Staffordshire,497,23647
+Lichfield,498,27228
+Newcastle-under-Lyme,499,21556
+South Staffordshire,500,25523
+Stafford,501,24739
+Staffordshire Moorlands,502,23085
+Tamworth,504,21720
+Warwickshire,42,26799
+North Warwickshire,523,25294
+Nuneaton and Bedworth,524,22072
+Rugby,525,28466
+Stratford-on-Avon,526,28789
+Warwick,527,28854
+West Midlands MC,35,23091
+Birmingham,231,23303
+Coventry,232,23633
+Dudley,233,22159
+Sandwell,234,20547
+Solihull,235,31074
+Walsall,236,20643
+Wolverhampton,237,20958
+Worcestershire,37,24921
+Bromsgrove,370,26652
+Malvern Hills,373,25169
+Redditch,374,20506
+Worcester,376,25887
+Wychavon,377,28688
+Wyre Forest,378,21402
+East,,28247
+Luton UA,58,22631
+Peterborough UA,60,24643
+Southend-on-Sea UA,62,27309
+Thurrock UA,63,24433
+Bedfordshire,59,27262
+Bedford UA,603,24886
+Bedford,253,24886
+Central Bedfordshire UA,604,28659
+Mid Bedfordshire,250,30213
+South Bedfordshire,252,27055
+Cambridgeshire,61,30426
+Cambridge,264,30739
+East Cambridgeshire,265,32614
+Fenland,266,23459
+Huntingdonshire,267,28910
+South Cambridgeshire,269,34377
+Essex,64,30354
+Basildon,337,28588
+Braintree,338,27944
+Brentwood,339,46241
+Castle Point,340,25480
+Chelmsford,341,32580
+Colchester,342,28420
+Epping Forest,343,32506
+Harlow,344,22167
+Maldon,345,35511
+Rochford,346,30363
+Tendring,348,25683
+Uttlesford,350,36919
+Hertfordshire,65,33831
+Broxbourne,379,29172
+Dacorum,380,33081
+East Hertfordshire,381,39242
+Hertsmere,382,32556
+North Hertfordshire,383,32036
+St. Albans,384,43041
+Stevenage,385,27386
+Three Rivers,386,37400
+Watford,387,32432
+Welwyn Hatfield,388,27396
+Norfolk,66,22695
+Breckland,444,20081
+Broadland,445,24056
+Great Yarmouth,446,20359
+King's Lynn and West Norfolk,447,20627
+North Norfolk,448,21590
+Norwich,449,23256
+South Norfolk,450,27369
+Suffolk,67,23745
+Babergh,505,26697
+Forest Heath,506,20793
+Ipswich,507,20503
+Mid Suffolk,508,26036
+St. Edmundsbury,509,25559
+Suffolk Coastal,510,26161
+Waveney,511,20858
+London,,39196
+Inner London,68,50291
+Camden,74,55270
+City of London,68,x
+Hackney,79,34314
+Hammersmith and Fulham,80,44916
+Haringey,81,32058
+Islington,86,53554
+Kensington and Chelsea,87,x
+Lambeth,89,36487
+Lewisham,90,31229
+Newham,92,24327
+Southwark,95,40966
+Tower Hamlets,97,42141
+Wandsworth,99,53562
+Westminster,100,80358
+Outer London,69,32700
+Barking and Dagenham,69,24969
+Barnet,70,35808
+Bexley,71,31275
+Brent,72,25427
+Bromley,73,38809
+Croydon,75,29298
+Ealing,76,31973
+Enfield,77,28136
+Greenwich,78,34795
+Harrow,82,30930
+Havering,83,30216
+Hillingdon,84,30108
+Hounslow,85,30823
+Kingston upon Thames,88,39638
+Merton,91,41368
+Redbridge,93,34190
+Richmond upon Thames,94,48297
+Sutton,96,31332
+Waltham Forest,98,27043
+South East,,30773
+Bracknell Forest UA,101,30741
+Brighton and Hove UA,107,27254
+Isle of Wight UA,114,20732
+Medway UA,115,25877
+Milton Keynes UA,109,29764
+Portsmouth UA,111,21718
+Reading UA,103,26640
+Slough UA,104,25008
+Southampton UA,112,22287
+West Berkshire UA,102,31677
+Windsor and Maidenhead UA,105,39969
+Wokingham UA,106,34190
+Buckinghamshire,110,37426
+Aylesbury Vale,259,32686
+Chiltern,260,40951
+South Bucks,262,44517
+Wycombe,263,37863
+East Sussex,108,30290
+Eastbourne,331,20869
+Hastings,332,22357
+Lewes,334,27481
+Rother,335,26105
+Wealden,336,x
+Hampshire,113,28931
+Basingstoke and Deane,357,31394
+East Hampshire,358,31842
+Eastleigh,359,27748
+Fareham,360,27944
+Gosport,361,22927
+Hart,362,41718
+Havant,363,24091
+New Forest,364,25525
+Rushmoor,366,28486
+Test Valley,368,26733
+Winchester,369,31730
+Kent,116,29526
+Ashford,400,26389
+Canterbury,401,27325
+Dartford,402,27912
+Dover,403,26223
+Gravesham,405,24635
+Maidstone,406,30306
+Sevenoaks,408,43025
+Shepway,409,26629
+Swale,410,26072
+Thanet,411,19335
+Tonbridge and Malling,412,33006
+Tunbridge Wells,413,39962
+Oxfordshire,117,31389
+Cherwell,480,27011
+Oxford,481,26084
+South Oxfordshire,482,39101
+Vale of White Horse,483,32700
+West Oxfordshire,484,33188
+Surrey,118,39497
+Elmbridge,512,x
+Epsom and Ewell,513,34401
+Guildford,514,37908
+Mole Valley,515,34819
+Reigate and Banstead,516,38700
+Runnymede,517,29921
+Spelthorne,518,34180
+Surrey Heath,519,34791
+Tandridge,520,31748
+Waverley,521,42655
+Woking,522,33112
+West Sussex,119,27359
+Adur,528,20647
+Arun,529,21999
+Chichester,530,28813
+Crawley,531,27289
+Horsham,532,32447
+Mid Sussex,533,30310
+Worthing,534,25672
+South West,,23804
+Bath and North East Somerset UA,43,25920
+Bournemouth UA,51,22478
+"Bristol, City of UA",44,24174
+North Somerset UA,45,27900
+Plymouth UA,48,21380
+Poole UA,52,24017
+South Gloucestershire UA,46,25180
+Swindon UA,56,26192
+Torbay UA,49,20337
+Cornwall UA,47,20277
+Caradon,282,22014
+Carrick,283,21733
+Kerrier,284,19524
+North Cornwall,285,19928
+Penwith,286,19998
+Restormel,287,18316
+Isles of Scilly,288,x
+Devon,50,22022
+East Devon,304,25239
+Exeter,305,22369
+Mid Devon,306,20851
+North Devon,307,20301
+South Hams,309,23011
+Teignbridge,310,21380
+Torridge,312,18850
+West Devon,313,22738
+Dorset,53,24464
+Christchurch,315,25716
+East Dorset,316,28829
+North Dorset,317,21670
+Purbeck,319,23725
+West Dorset,320,24548
+Weymouth and Portland,321,21236
+Gloucestershire,54,25625
+Cheltenham,351,27171
+Cotswold,352,23372
+Forest of Dean,353,26619
+Gloucester,354,22322
+Stroud,355,27360
+Tewkesbury,356,27949
+Somerset,55,23079
+Mendip,491,23975
+Sedgemoor,492,23016
+South Somerset,493,21385
+Taunton Deane,494,25179
+West Somerset,495,21717
+Wiltshire UA,57,25207
+Kennet,535,25915
+North Wiltshire,536,25417
+Salisbury,537,25095
+West Wiltshire,539,24656
+Wales / Cymru,,22461
+Isle of Anglesey / Ynys Môn,130,20465
+Gwynedd / Gwynedd,129,19214
+Conwy / Conwy,126,20328
+Denbighshire / Sir Ddinbych,127,21836
+Flintshire / Sir y Fflint,128,22857
+Wrexham / Wrecsam,141,22787
+Powys / Powys,136,21584
+Ceredigion / Ceredigion,125,20335
+Pembrokeshire / Sir Benfro,135,22292
+Carmarthenshire / Sir Gaerfryddin,124,21942
+Swansea / Abertawe,138,22442
+Neath Port Talbot / Castell-nedd Port Talbot,133,21625
+Bridgend / Pen-y-bont ar Ogwr,121,21015
+The Vale of Glamorgan / Bro Morgannwg,140,24306
+Cardiff / Caerdydd,123,24923
+"Rhondda, Cynon, Taff / Rhondda, Cynon, Taff",137,21278
+Merthyr Tydfil / Merthyr Tudful,131,22246
+Caerphilly / Caerffili,122,22038
+Blaenau Gwent / Blaenau Gwent,120,18916
+Torfaen / Tor-faen,139,22877
+Monmouthshire / Sir Fynwy,132,28571
+Newport / Casnewydd,134,24057
+Scotland,,24819
+Aberdeen City,142,28118
+Aberdeenshire,143,27156
+Angus,144,21475
+Argyll & Bute,145,22193
+Clackmannanshire,147,23255
+Dumfries & Galloway,148,21635
+Dundee City,149,21805
+East Ayrshire,150,22356
+East Dunbartonshire,151,29307
+East Lothian,152,26953
+East Renfrewshire,153,32701
+"Edinburgh, City of",154,29701
+Eilean Siar,173,19621
+Falkirk,155,24302
+Fife,156,23376
+Glasgow City,157,23825
+Highland,158,21820
+Inverclyde,159,22171
+Midlothian,160,24287
+Moray,161,21671
+North Ayrshire,162,23495
+North Lanarkshire,163,22450
+Orkney Islands,164,22523
+Perth & Kinross,165,23521
+Renfrewshire,166,24972
+Scottish Borders,146,21638
+Shetland Islands,167,24615
+South Ayrshire,168,26762
+South Lanarkshire,169,24254
+Stirling,170,29209
+West Dunbartonshire,171,24130
+West Lothian,172,27736
+Northern Ireland,,21868
+Not Classified,,24780

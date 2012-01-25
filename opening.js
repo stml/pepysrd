@@ -148,13 +148,14 @@ function getHouseholdIncome(birthMLSOA,currentMLSOA) {
 				}
 			$('#birthplace > ul').append('<li id="birthincome">Avg Household Weekly Income: &pound;'+birthincome+'</li>');
 			$('#currentplace > ul').append('<li id="currentincome">Avg Household Weekly Income: &pound;'+currentincome+'</li>');
-			if (birthincome > currentincome) {
-				var incomedifference = Math.round((birthincome - currentincome)*100) / 100;
-				$('#incomedifference').html('Household income is &pound;'+incomedifference+' less a week.');
-				}
-			else if (birthincome < currentlifeexpectancy) {
+			var incomedifference = currentincome - birthincome;
+			if (incomedifference > 0) {
 				var incomedifference = Math.round((currentincome - birthincome)*100) / 100;
 				$('#incomedifference').html('Household income is &pound;'+incomedifference+' more a week.');
+				}
+			if (incomedifference < 0) {
+				var incomedifference = Math.round((birthincome - currentincome)*100) / 100;
+				$('#incomedifference').html('Household income is &pound;'+Math.abs(incomedifference)+' less a week.');
 				}
 			}
      	});

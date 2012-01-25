@@ -3,7 +3,7 @@
 <title>Pepys Rd : Hello</title>
 <link rel='stylesheet' type='text/css' media='screen' href='styles2.css' />
 
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgGTKsngvpw0m6KOhsAgHYOeKFdFNzVOs&sensor=false"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgGTKsngvpw0m6KOhsAgHYOeKFdFNzVOs&sensor=false"></script> 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  
 <script type="text/javascript" src="opening.js"></script>
 
@@ -55,7 +55,7 @@
 <li>Property price data from <a href="http://www.nestoria.co.uk">Nestoria</a></li>
 <li>Local Authority locations from <a href="http://mapit.mysociety.org/">MaPit</a> <em>[We need a license]</em></li>
 <li>Life Expectancy data from <a href="http://www.statistics.gov.uk/hub/population/deaths/life-expectancies">UK National Statistics</a></li>
-<li>Household income from <a href="http://data.gov.uk/dataset/household_earnings_estimates_-_model-based_estimates_of_income_for_msoas">Office of National Statistics / data.gov.uk</a></li>
+<li>Household income from <a href="http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-235202">Office of National Statistics / data.gov.uk</a></li>
 </ul>
 
 </form>

@@ -1,0 +1,520 @@
+Areacode,Area name
+926,UNITED KINGDOM
+941,ENGLAND AND WALES
+921,ENGLAND
+A,NORTH EAST
+
+00EJ,,County Durham UA 
+00EH,,Darlington UA
+00EB,,Hartlepool UA
+00EC,,Middlesbrough UA
+00EM,,Northumberland UA 
+00EE,,Redcar and Cleveland UA
+00EF,,Stockton-on-Tees UA
+
+2D,,Tyne and Wear (Met County)
+00CH
+00CJ
+00CK
+00CL
+00CM
+
+B,NORTH WEST 
+
+00EX,,Blackburn with Darwen UA
+00EY,,Blackpool UA
+00EQ,,Cheshire East UA 
+00EW,,Cheshire West and Chester UA 
+00ET,,Halton UA
+00EU,,Warrington UA
+
+16,,Cumbria 
+16UB
+16UC
+16UD
+16UE
+16UF
+16UG
+
+2A,,Greater Manchester (Met County)
+00BL
+00BM
+00BN
+00BP
+00BQ
+00BR
+00BS
+00BT
+00BU
+00BW
+
+30,,Lancashire
+30UD
+30UE
+30UF
+30UG
+30UH
+30UJ
+30UK
+30UL
+30UM
+30UN
+30UP
+30UQ
+
+2B,,Merseyside (Met County)
+00BX
+00BY
+00CA
+00BZ
+00CB
+
+D,YORKSHIRE AND THE HUMBER
+
+00FB,,East Riding of Yorkshire UA
+00FA,,"Kingston upon Hull, City of UA"
+00FC,,North East Lincolnshire UA
+00FD,,North Lincolnshire UA
+00FF,,York UA
+
+36,,North Yorkshire
+36UB
+36UC
+36UD
+36UE
+36UF
+36UG
+36UH
+
+2C,,South Yorkshire (Met County)
+00CC
+00CE
+00CF
+00CG
+
+2F,,West Yorkshire (Met County)
+00CX
+00CY
+00CZ
+00DA
+00DB
+
+E,EAST MIDLANDS
+
+00FK,,Derby UA 
+00FN,,Leicester UA
+00FY,,Nottingham UA
+00FP,,Rutland UA 
+
+17,,Derbyshire
+17UB
+17UC
+17UD
+17UF
+17UG
+17UH
+17UJ
+17UK
+
+31,,Leicestershire
+31UB
+31UC
+31UD
+31UE
+31UG
+31UH
+31UJ
+
+32,,Lincolnshire 
+32UB
+32UC
+32UD
+32UE
+32UF
+32UG
+32UH
+
+34,,Northamptonshire 
+34UB
+34UC
+34UD
+34UE
+34UF
+34UG
+34UH
+
+37,,Nottinghamshire
+37UB
+37UC
+37UD
+37UE
+37UF
+37UG
+37UJ
+
+F,WEST MIDLANDS
+
+00GA,,"Herefordshire, County of UA"
+00GG,,Shropshire UA 
+00GL,,Stoke-on-Trent UA
+00GF,,Telford and Wrekin UA
+
+41,,Staffordshire
+41UB
+41UC
+41UD
+41UE
+41UF
+41UG
+41UH
+41UK
+
+44,,Warwickshire
+44UB
+44UC
+44UD
+44UE
+44UF
+
+2E,,West Midlands (Met County)
+00CN
+00CQ
+00CR
+00CS
+00CT
+00CU
+00CW
+
+47,,Worcestershire
+47UB
+47UC
+47UD
+47UE
+47UF
+47UG
+
+G,EAST
+
+00KB,,Bedford UA 
+00KC,,Central Bedfordshire UA 
+00KA,,Luton UA
+00JA,,Peterborough UA
+00KF,,Southend-on-Sea UA
+00KG,,Thurrock UA
+
+12,,Cambridgeshire
+12UB
+12UC
+12UD
+12UE
+12UG
+
+22,,Essex
+22UB
+22UC
+22UD
+22UE
+22UF
+22UG
+22UH
+22UJ
+22UK
+22UL
+22UN
+22UQ
+
+26,,Hertfordshire 
+26UB
+26UC
+26UD
+26UE
+26UF
+26UG
+26UH
+26UJ
+26UK
+26UL
+
+33,,Norfolk 
+33UB
+33UC
+33UD
+33UE
+33UF
+33UG
+33UH
+
+42,,Suffolk
+42UB
+42UC
+42UD
+42UE
+42UF
+42UG
+42UH
+
+H,LONDON
+
+1B,,Inner London
+00AG
+00AA
+00AM
+00AN
+00AP
+00AU
+00AW
+00AY
+00AZ
+00BB
+00BE
+00BG
+00BJ
+00BK
+
+1C,,Outer London
+00AB
+00AC
+00AD
+00AE
+00AF
+00AH
+00AJ
+00AK
+00AL
+00AQ
+00AR
+00AS
+00AT
+00AX
+00BA
+00BC
+00BD
+00BF
+00BH
+
+J,SOUTH EAST
+
+00MA,,Bracknell Forest UA
+00ML,,Brighton and Hove UA
+00MW,,Isle of Wight UA
+00LC,,Medway UA
+00MG,,Milton Keynes UA
+00MR,,Portsmouth UA
+00MC,,Reading UA
+00MD,,Slough UA
+00MS,,Southampton UA
+00MB,,West Berkshire UA
+00ME,,Windsor and Maidenhead UA
+00MF,,Wokingham UA
+
+11,,Buckinghamshire
+11UB
+11UC
+11UE
+11UF
+
+21,,East Sussex
+21UC
+21UD
+21UF
+21UG
+21UH
+
+24,,Hampshire
+24UB
+24UC
+24UD
+24UE
+24UF
+24UG
+24UH
+24UJ
+24UL
+24UN
+24UP
+
+29,,Kent
+29UB
+29UC
+29UD
+29UE
+29UG
+29UH
+29UK
+29UL
+29UM
+29UN
+29UP
+29UQ
+
+38,,Oxfordshire 
+38UB
+38UC
+38UD
+38UE
+38UF
+
+43,,Surrey
+43UB
+43UC
+43UD
+43UE
+43UF
+43UG
+43UH
+43UJ
+43UK
+43UL
+43UM
+
+45,,West Sussex
+45UB
+45UC
+45UD
+45UE
+45UF
+45UG
+45UH
+
+K,SOUTH WEST
+
+00HA,,Bath and North East Somerset UA
+00HN,,Bournemouth UA
+00HB,,"Bristol, City of UA"
+00HE,,Cornwall UA 
+00HF,,Isles of Scilly UA4 
+00HC,,North Somerset UA
+00HG,,Plymouth UA
+00HP,,Poole UA
+00HD,,South Gloucestershire UA
+00HX,,Swindon UA
+00HH,,Torbay UA
+00HY,,Wiltshire UA 
+
+18,,Devon
+18UB
+18UC
+18UD
+18UE
+18UG
+18UH
+18UK
+18UL
+
+19,,Dorset
+19UC
+19UD
+19UE
+19UG
+19UH
+19UJ
+
+23,,Gloucestershire
+23UB
+23UC
+23UD
+23UE
+23UF
+23UG
+
+40,,Somerset 
+40UB
+40UC
+40UD
+40UE
+40UF
+
+924,WALES
+
+00NA
+00NC
+00NE
+00NG
+00NJ
+00NL
+00NN
+00NQ
+00NS
+00NU
+00NX
+00NZ
+00PB
+00PD
+00PT
+00PF
+00PH
+00PK
+00PL
+00PM
+00PP
+00PR
+
+923,SCOTLAND
+
+00QA
+00QB
+00QC
+00QD
+00QF
+00QH
+00QJ
+00QK
+00QL
+00QM
+00QN
+00QP
+00RJ
+00QQ
+00QR
+00QS
+00QT
+00QU
+00QW
+00QX
+00QY
+00QZ
+00RA
+00RB
+00RC
+00QE
+00RD
+00RE
+00RF
+00RG
+00QG
+00RH
+
+922,NORTHERN IRELAND 
+
+95T
+95X
+95O
+95G
+95D
+95Q
+95Z
+95V
+95Y
+95C
+95I
+95N
+95A
+95R
+95M
+95L
+95F
+95B
+95S
+95H
+95E
+95P
+95U
+95W
+95K
+95J
+
+1 Life expectancy figures are presented to one decimal place. The rankings in this table reflect differences in the unrounded numbers.
+"1= Highest, 404 = Lowest"
+2 Based on boundaries as of 2010.
+"3 Three-year rolling average, based on deaths registered in calendar years and mid-year population estimates."
+4 Figures are not calculated for City of London or Isles of Scilly due to small numbers of deaths and populations.
