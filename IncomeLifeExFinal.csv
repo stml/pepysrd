@@ -68,40 +68,40 @@ Hertfordshire,65,26,81.35,33831
 Norfolk,66,33,81.2,22695
 Suffolk,67,42,81.55,23745
 Inner London,68,1B,78.75,50291
-  City of London,68,00AA,84.95,50291
+City of London,68,00AA,84.95,50291
 Outer London,69,1C,84.95,32700
-  Barking and Dagenham,69,00AB,82.25,24969
-  Barnet,70,00AC,82.25,35808
-  Bexley,71,00AD,81.25,31275
-  Brent,72,00AE,81.4,25427
-  Bromley,73,00AF,81.85,38809
-  Camden,74,00AG,80.65,55270
-  Croydon,75,00AH,81.15,29298
-  Ealing,76,00AJ,81.1,31973
-  Enfield,77,00AK,81,28136
-  Greenwich,78,00AL,78.85,34795
-  Hackney,79,00AM,79.9,34314
-  Hammersmith and Fulham,80,00AN,81.2,44916
-  Haringey,81,00AP,80.15,32058
-  Harrow,82,00AQ,82.9,30930
-  Havering,83,00AR,80.9,30216
-  Hillingdon,84,00AS,81,30108
-  Hounslow,85,00AT,79.95,30823
-  Islington,86,00AU,78.3,53554
-  Kensington and Chelsea,87,00AW,86.7,80358
-  Kingston upon Thames,88,00AX,82.2,39638
-  Lambeth,89,00AY,78.75,36487
-  Lewisham,90,00AZ,78.8,31229
-  Merton,91,00BA,82.15,41368
-  Newham,92,00BB,78.35,24327
-  Redbridge,93,00BC,81.2,34190
-  Richmond upon Thames,94,00BD,83.2,48297
-  Southwark,95,00BE,80.35,40966
-  Sutton,96,00BF,81.25,31332
-  Tower Hamlets,97,00BG,78.45,42141
-  Waltham Forest,98,00BH,79.35,27043
-  Wandsworth,99,00BJ,79.95,53562
-  Westminster,100,00BK,84.95,80358
+Barking and Dagenham,69,00AB,82.25,24969
+Barnet,70,00AC,82.25,35808
+Bexley,71,00AD,81.25,31275
+Brent,72,00AE,81.4,25427
+Bromley,73,00AF,81.85,38809
+Camden,74,00AG,80.65,55270
+Croydon,75,00AH,81.15,29298
+Ealing,76,00AJ,81.1,31973
+Enfield,77,00AK,81,28136
+Greenwich,78,00AL,78.85,34795
+Hackney,79,00AM,79.9,34314
+Hammersmith and Fulham,80,00AN,81.2,44916
+Haringey,81,00AP,80.15,32058
+Harrow,82,00AQ,82.9,30930
+Havering,83,00AR,80.9,30216
+Hillingdon,84,00AS,81,30108
+Hounslow,85,00AT,79.95,30823
+Islington,86,00AU,78.3,53554
+Kensington and Chelsea,87,00AW,86.7,80358
+Kingston upon Thames,88,00AX,82.2,39638
+Lambeth,89,00AY,78.75,36487
+Lewisham,90,00AZ,78.8,31229
+Merton,91,00BA,82.15,41368
+Newham,92,00BB,78.35,24327
+Redbridge,93,00BC,81.2,34190
+Richmond upon Thames,94,00BD,83.2,48297
+Southwark,95,00BE,80.35,40966
+Sutton,96,00BF,81.25,31332
+Tower Hamlets,97,00BG,78.45,42141
+Waltham Forest,98,00BH,79.35,27043
+Wandsworth,99,00BJ,79.95,53562
+Westminster,100,00BK,84.95,80358
 Bracknell Forest UA,101,00MA,81.75,30741
 West Berkshire UA,102,00MB,81.85,31677
 Reading UA,103,00MC,80.05,26640
@@ -175,247 +175,247 @@ Stirling,170,00RG,79.55,29209
 West Dunbartonshire,171,00QG,75.45,24130
 West Lothian,172,00RH,77.85,27736
 Eilean Siar,173,00RJ,77.75,19621
-  Bolton,207,00BL,77.9,22578
-  Bury,208,00BM,79.15,24906
-  Manchester,209,00BN,76.55,21255
-  Oldham,210,00BP,77.7,22575
-  Rochdale,211,00BQ,78.05,22784
-  Salford,212,00BR,77.15,22184
-  Stockport,213,00BS,80.35,26529
-  Tameside,214,00BT,77.7,21338
-  Trafford,215,00BU,80.85,29066
-  Wigan,216,00BW,78.1,22335
-  Knowsley,217,00BX,77.85,23806
-  Liverpool,218,00BY,76.85,22924
-  St. Helens,219,00CA,79.4,23496
-  Sefton,220,00BZ,78.1,22252
-  Wirral,221,00CB,78.6,25648
-  Barnsley,222,00CC,78.25,22447
-  Doncaster,223,00CE,78.8,21991
-  Rotherham,224,00CF,78.65,22322
-  Sheffield,225,00CG,79.65,23051
-  Gateshead,226,00CH,78.5,21921
-  Newcastle upon Tyne,227,00CJ,78.6,23212
-  North Tyneside,228,00CK,78.9,22455
-  South Tyneside,229,00CL,78.7,22489
-  Sunderland,230,00CM,78.3,21349
-  Birmingham,231,00CN,78.85,23303
-  Coventry,232,00CQ,79.1,23633
-  Dudley,233,00CR,80,22159
-  Sandwell,234,00CS,77.8,20547
-  Solihull,235,00CT,81.9,31074
-  Walsall,236,00CU,79.1,20643
-  Wolverhampton,237,00CW,78.65,20958
-  Bradford,238,00CX,78.4,21941
-  Calderdale,239,00CY,79.25,22755
-  Kirklees,240,00CZ,78.8,23313
-  Leeds,241,00DA,79.85,24870
-  Wakefield,242,00DB,78.8,21512
-  Bedford,253,00KB,80.65,24886
-  Aylesbury Vale,259,11UB,81.4,32686
-  Chiltern,260,11UC,82.95,40951
-  South Bucks,262,11UE,83,44517
-  Wycombe,263,11UF,82.3,37863
-  Cambridge,264,12UB,80.65,30739
-  East Cambridgeshire,265,12UC,82.4,32614
-  Fenland,266,12UD,79.6,23459
-  Huntingdonshire,267,12UE,81.7,28910
-  South Cambridgeshire,269,12UG,83.05,34377
-  North Cornwall,285,11UB,81.4,19928
-  Penwith,286,11UC,82.95,19998
-  Restormel,287,11UE,83,18316
+Bolton,207,00BL,77.9,22578
+Bury,208,00BM,79.15,24906
+Manchester,209,00BN,76.55,21255
+Oldham,210,00BP,77.7,22575
+Rochdale,211,00BQ,78.05,22784
+Salford,212,00BR,77.15,22184
+Stockport,213,00BS,80.35,26529
+Tameside,214,00BT,77.7,21338
+Trafford,215,00BU,80.85,29066
+Wigan,216,00BW,78.1,22335
+Knowsley,217,00BX,77.85,23806
+Liverpool,218,00BY,76.85,22924
+St. Helens,219,00CA,79.4,23496
+Sefton,220,00BZ,78.1,22252
+Wirral,221,00CB,78.6,25648
+Barnsley,222,00CC,78.25,22447
+Doncaster,223,00CE,78.8,21991
+Rotherham,224,00CF,78.65,22322
+Sheffield,225,00CG,79.65,23051
+Gateshead,226,00CH,78.5,21921
+Newcastle upon Tyne,227,00CJ,78.6,23212
+North Tyneside,228,00CK,78.9,22455
+South Tyneside,229,00CL,78.7,22489
+Sunderland,230,00CM,78.3,21349
+Birmingham,231,00CN,78.85,23303
+Coventry,232,00CQ,79.1,23633
+Dudley,233,00CR,80,22159
+Sandwell,234,00CS,77.8,20547
+Solihull,235,00CT,81.9,31074
+Walsall,236,00CU,79.1,20643
+Wolverhampton,237,00CW,78.65,20958
+Bradford,238,00CX,78.4,21941
+Calderdale,239,00CY,79.25,22755
+Kirklees,240,00CZ,78.8,23313
+Leeds,241,00DA,79.85,24870
+Wakefield,242,00DB,78.8,21512
+Bedford,253,00KB,80.65,24886
+Aylesbury Vale,259,11UB,81.4,32686
+Chiltern,260,11UC,82.95,40951
+South Bucks,262,11UE,83,44517
+Wycombe,263,11UF,82.3,37863
+Cambridge,264,12UB,80.65,30739
+East Cambridgeshire,265,12UC,82.4,32614
+Fenland,266,12UD,79.6,23459
+Huntingdonshire,267,12UE,81.7,28910
+South Cambridgeshire,269,12UG,83.05,34377
+North Cornwall,285,11UB,81.4,19928
+Penwith,286,11UC,82.95,19998
+Restormel,287,11UE,83,18316
 Isles of Scilly,288,11UF,82.3,18316
-  Allerdale,289,16UB,79.4,19880
-  Barrow-in-Furness,290,16UC,79.05,21069
-  Carlisle,291,16UD,79.3,21001
-  Copeland,292,16UE,79,21976
-  Eden,293,16UF,81.4,19907
-  South Lakeland,294,16UG,81.1,23220
-  Amber Valley,295,17UB,80.25,25492
-  Bolsover,296,17UC,78.6,22111
-  Chesterfield,297,17UD,79.9,22787
-  Derbyshire Dales,299,17UF,81.85,29628
-  Erewash,300,17UG,80.4,23216
-  High Peak,301,17UH,80.55,24749
-  North East Derbyshire,302,17UJ,80.5,25533
-  South Derbyshire,303,17UK,79.9,26613
-  East Devon,304,18UB,82.35,25239
-  Exeter,305,18UC,81.15,22369
-  Mid Devon,306,18UD,82,20851
-  North Devon,307,18UE,80.7,20301
-  South Hams,309,18UG,81.75,23011
-  Teignbridge,310,18UH,81.8,21380
-  Torridge,312,18UK,81.4,18850
-  West Devon,313,18UL,81.75,22738
-  Christchurch,315,19UC,83,25716
-  East Dorset,316,19UD,83.4,28829
-  North Dorset,317,19UE,82.9,21670
-  Purbeck,319,19UG,82.55,23725
-  West Dorset,320,19UH,81.8,24548
-  Weymouth and Portland,321,19UJ,80.2,21236
-  Eastbourne,331,21UC,81.05,20869
-  Hastings,332,21UD,78.7,22357
-  Lewes,334,21UF,82.85,27481
-  Rother,335,21UG,81.45,26105
-  Wealden,336,21UH,82.45,26105
-  Basildon,337,22UB,80.7,28588
-  Braintree,338,22UC,81.25,27944
-  Brentwood,339,22UD,82.3,46241
-  Castle Point,340,22UE,81.3,25480
-  Chelmsford,341,22UF,82.3,32580
-  Colchester,342,22UG,81.3,28420
-  Epping Forest,343,22UH,80.95,32506
-  Harlow,344,22UJ,80.55,22167
-  Maldon,345,22UK,81.15,35511
-  Rochford,346,22UL,82.15,30363
-  Tendring,348,22UN,80.9,25683
-  Uttlesford,350,22UQ,82.2,36919
-  Cheltenham,351,23UB,82.05,27171
-  Cotswold,352,23UC,81.95,23372
-  Forest of Dean,353,23UD,80.6,26619
-  Gloucester,354,23UE,80,22322
-  Stroud,355,23UF,81.15,27360
-  Tewkesbury,356,23UG,81.55,27949
-  Basingstoke and Deane,357,24UB,81.45,31394
-  East Hampshire,358,24UC,81.5,31842
-  Eastleigh,359,24UD,81.75,27748
-  Fareham,360,24UE,82.85,27944
-  Gosport,361,24UF,80.05,22927
-  Hart,362,24UG,83.4,41718
-  Havant,363,24UH,81.15,24091
-  New Forest,364,24UJ,82.85,25525
-  Rushmoor,366,24UL,81.4,28486
-  Test Valley,368,24UN,81.85,26733
-  Winchester,369,24UP,81.9,31730
-  Bromsgrove,370,47UB,80.75,26652
-  Malvern Hills,373,47UC,81.25,25169
-  Redditch,374,47UD,80.1,20506
-  Worcester,376,47UE,79.55,25887
-  Wychavon,377,47UF,82.1,28688
-  Wyre Forest,378,47UG,80.5,21402
-  Broxbourne,379,26UB,81.8,29172
-  Dacorum,380,26UC,81.95,33081
-  East Hertfordshire,381,26UD,81.75,39242
-  Hertsmere,382,26UE,80.85,32556
-  North Hertfordshire,383,26UF,80.85,32036
-  St. Albans,384,26UG,82.2,43041
-  Stevenage,385,26UH,79.9,27386
-  Three Rivers,386,26UJ,82.55,37400
-  Watford,387,26UK,79.9,32432
-  Welwyn Hatfield,388,26UL,81.2,27396
-  Ashford,400,29UB,82.05,26389
-  Canterbury,401,29UC,80.45,27325
-  Dartford,402,29UD,80,27912
-  Dover,403,29UE,79.9,26223
-  Gravesham,405,29UG,80.4,24635
-  Maidstone,406,29UH,80.85,30306
-  Sevenoaks,408,29UK,82.15,43025
-  Shepway,409,29UL,80.9,26629
-  Swale,410,29UM,79.2,26072
-  Thanet,411,29UN,79.05,19335
-  Tonbridge and Malling,412,29UP,82.1,33006
-  Tunbridge Wells,413,29UQ,81.65,39962
-  Burnley,416,30UD,77.35,20523
-  Chorley,417,30UE,79.45,23605
-  Fylde,418,30UF,80.7,26863
-  Hyndburn,419,30UG,77.65,22339
-  Lancaster,420,30UH,79.1,25269
-  Pendle,421,30UJ,79,22465
-  Preston,422,30UK,77.75,21977
-  Ribble Valley,423,30UL,81,27889
-  Rossendale,424,30UM,77.65,25206
-  South Ribble,425,30UN,80.4,24650
-  West Lancashire,426,30UP,79.6,25245
-  Wyre,427,30UQ,79.95,22703
-  Blaby,428,31UB,82.15,26393
-  Charnwood,429,31UC,81.25,24987
-  Harborough,430,31UD,81.85,29529
-  Hinckley and Bosworth,431,31UE,81.9,24259
-  Melton,433,31UG,81.7,22769
-  North West Leicestershire,434,31UH,80.3,25075
-  Oadby and Wigston,435,31UJ,81.45,24064
-  Boston,437,32UH,80.5,19278
-  East Lindsey,438,32UC,79.7,21621
-  Lincoln,439,34,80.25,20710
-  North Kesteven,440,34UB,77.45,23156
-  South Holland,441,34UC,80.8,22592
-  South Kesteven,442,34UD,80.3,26403
-  West Lindsey,443,34UE,80.1,22292
-  Breckland,444,33UB,81.4,20081
-  Broadland,445,33UC,81.4,24056
-  Great Yarmouth,446,33UD,79.75,20359
-  King's Lynn and West Norfolk,447,33UE,81.05,20627
-  North Norfolk,448,33UF,81.95,21590
-  Norwich,449,33UG,80.45,23256
-  South Norfolk,450,33UH,81.8,27369
-  Corby,451,34UH,80.65,21683
-  East Northamptonshire,453,37,80.05,26546
-  Kettering,454,37UB,78.95,24729
-  Northampton,455,37UC,79.5,24294
-  South Northamptonshire,456,37UD,80.9,30833
-  Wellingborough,457,37UE,80.65,23239
-  Craven,464,36UB,82.1,24112
-  Hambleton,465,36UC,81.9,24112
-  Harrogate,466,36UD,81.25,25798
-  Richmondshire,467,36UE,80.9,23486
-  Ryedale,468,36UF,81.15,21421
-  Scarborough,469,36UG,80.05,23206
-  Selby,470,36UH,80.85,27737
-  Ashfield,472,37UB,78.95,21109
-  Bassetlaw,473,37UC,79.5,24117
-  Broxtowe,474,37UD,80.9,26210
-  Gedling,475,37UE,80.65,25304
-  Mansfield,476,37UF,78.55,20072
-  Newark and Sherwood,477,37UG,79.85,22618
-  Rushcliffe,479,37UJ,82.05,33127
-  Cherwell,480,38UB,81.25,27011
-  Oxford,481,38UC,80.85,26084
-  South Oxfordshire,482,38UD,81.95,39101
-  Vale of White Horse,483,38UE,83.1,32700
-  West Oxfordshire,484,38UF,82.15,33188
-  Mendip,491,40UB,81.7,23975
-  Sedgemoor,492,40UC,80.95,23016
-  South Somerset,493,40UD,82,21385
-  Taunton Deane,494,40UE,80.7,25179
-  West Somerset,495,40UF,81.9,21717
-  Cannock Chase,496,41UB,79.05,21475
-  East Staffordshire,497,41UC,79.85,23647
-  Lichfield,498,41UD,80.25,27228
-  Newcastle-under-Lyme,499,41UE,79.4,21556
-  South Staffordshire,500,41UF,80.7,25523
-  Stafford,501,41UG,80.65,24739
-  Staffordshire Moorlands,502,41UH,80.4,23085
-  Tamworth,504,41UK,80.35,21720
-  Babergh,505,42UB,81.55,26697
-  Forest Heath,506,42UC,81.35,20793
-  Ipswich,507,42UD,80.4,20503
-  Mid Suffolk,508,42UE,82.25,26036
-  St. Edmundsbury,509,42UF,81.85,25559
-  Suffolk Coastal,510,42UG,82.2,26161
-  Waveney,511,42UH,81,20858
-  Elmbridge,512,43UB,82.55,20858
-  Epsom and Ewell,513,43UC,83.7,34401
-  Guildford,514,43UD,82.8,37908
-  Mole Valley,515,43UE,82.2,34819
-  Reigate and Banstead,516,43UF,81.6,38700
-  Runnymede,517,43UG,82.2,29921
-  Spelthorne,518,43UH,81.9,34180
-  Surrey Heath,519,43UJ,82.2,34791
-  Tandridge,520,43UK,81.85,31748
-  Waverley,521,43UL,82.8,42655
-  Woking,522,43UM,81.65,33112
-  North Warwickshire,523,44UB,79.65,25294
-  Nuneaton and Bedworth,524,44UC,79.3,22072
-  Rugby,525,44UD,80.65,28466
-  Stratford-on-Avon,526,44UE,81.25,28789
-  Warwick,527,44UF,81.6,28854
-  Adur,528,45UB,80.5,20647
-  Arun,529,45UC,81.05,21999
-  Chichester,530,45UD,81.35,28813
-  Crawley,531,45UE,82.75,27289
-  Horsham,532,45UF,82.05,32447
-  Mid Sussex,533,45UG,81.7,30310
-  Worthing,534,45UH,80.2,25672
+Allerdale,289,16UB,79.4,19880
+Barrow-in-Furness,290,16UC,79.05,21069
+Carlisle,291,16UD,79.3,21001
+Copeland,292,16UE,79,21976
+Eden,293,16UF,81.4,19907
+South Lakeland,294,16UG,81.1,23220
+Amber Valley,295,17UB,80.25,25492
+Bolsover,296,17UC,78.6,22111
+Chesterfield,297,17UD,79.9,22787
+Derbyshire Dales,299,17UF,81.85,29628
+Erewash,300,17UG,80.4,23216
+High Peak,301,17UH,80.55,24749
+North East Derbyshire,302,17UJ,80.5,25533
+South Derbyshire,303,17UK,79.9,26613
+East Devon,304,18UB,82.35,25239
+Exeter,305,18UC,81.15,22369
+Mid Devon,306,18UD,82,20851
+North Devon,307,18UE,80.7,20301
+South Hams,309,18UG,81.75,23011
+Teignbridge,310,18UH,81.8,21380
+Torridge,312,18UK,81.4,18850
+West Devon,313,18UL,81.75,22738
+Christchurch,315,19UC,83,25716
+East Dorset,316,19UD,83.4,28829
+North Dorset,317,19UE,82.9,21670
+Purbeck,319,19UG,82.55,23725
+West Dorset,320,19UH,81.8,24548
+Weymouth and Portland,321,19UJ,80.2,21236
+Eastbourne,331,21UC,81.05,20869
+Hastings,332,21UD,78.7,22357
+Lewes,334,21UF,82.85,27481
+Rother,335,21UG,81.45,26105
+Wealden,336,21UH,82.45,26105
+Basildon,337,22UB,80.7,28588
+Braintree,338,22UC,81.25,27944
+Brentwood,339,22UD,82.3,46241
+Castle Point,340,22UE,81.3,25480
+Chelmsford,341,22UF,82.3,32580
+Colchester,342,22UG,81.3,28420
+Epping Forest,343,22UH,80.95,32506
+Harlow,344,22UJ,80.55,22167
+Maldon,345,22UK,81.15,35511
+Rochford,346,22UL,82.15,30363
+Tendring,348,22UN,80.9,25683
+Uttlesford,350,22UQ,82.2,36919
+Cheltenham,351,23UB,82.05,27171
+Cotswold,352,23UC,81.95,23372
+Forest of Dean,353,23UD,80.6,26619
+Gloucester,354,23UE,80,22322
+Stroud,355,23UF,81.15,27360
+Tewkesbury,356,23UG,81.55,27949
+Basingstoke and Deane,357,24UB,81.45,31394
+East Hampshire,358,24UC,81.5,31842
+Eastleigh,359,24UD,81.75,27748
+Fareham,360,24UE,82.85,27944
+Gosport,361,24UF,80.05,22927
+Hart,362,24UG,83.4,41718
+Havant,363,24UH,81.15,24091
+New Forest,364,24UJ,82.85,25525
+Rushmoor,366,24UL,81.4,28486
+Test Valley,368,24UN,81.85,26733
+Winchester,369,24UP,81.9,31730
+Bromsgrove,370,47UB,80.75,26652
+Malvern Hills,373,47UC,81.25,25169
+Redditch,374,47UD,80.1,20506
+Worcester,376,47UE,79.55,25887
+Wychavon,377,47UF,82.1,28688
+Wyre Forest,378,47UG,80.5,21402
+Broxbourne,379,26UB,81.8,29172
+Dacorum,380,26UC,81.95,33081
+East Hertfordshire,381,26UD,81.75,39242
+Hertsmere,382,26UE,80.85,32556
+North Hertfordshire,383,26UF,80.85,32036
+St. Albans,384,26UG,82.2,43041
+Stevenage,385,26UH,79.9,27386
+Three Rivers,386,26UJ,82.55,37400
+Watford,387,26UK,79.9,32432
+Welwyn Hatfield,388,26UL,81.2,27396
+Ashford,400,29UB,82.05,26389
+Canterbury,401,29UC,80.45,27325
+Dartford,402,29UD,80,27912
+Dover,403,29UE,79.9,26223
+Gravesham,405,29UG,80.4,24635
+Maidstone,406,29UH,80.85,30306
+Sevenoaks,408,29UK,82.15,43025
+Shepway,409,29UL,80.9,26629
+Swale,410,29UM,79.2,26072
+Thanet,411,29UN,79.05,19335
+Tonbridge and Malling,412,29UP,82.1,33006
+Tunbridge Wells,413,29UQ,81.65,39962
+Burnley,416,30UD,77.35,20523
+Chorley,417,30UE,79.45,23605
+Fylde,418,30UF,80.7,26863
+Hyndburn,419,30UG,77.65,22339
+Lancaster,420,30UH,79.1,25269
+Pendle,421,30UJ,79,22465
+Preston,422,30UK,77.75,21977
+Ribble Valley,423,30UL,81,27889
+Rossendale,424,30UM,77.65,25206
+South Ribble,425,30UN,80.4,24650
+West Lancashire,426,30UP,79.6,25245
+Wyre,427,30UQ,79.95,22703
+Blaby,428,31UB,82.15,26393
+Charnwood,429,31UC,81.25,24987
+Harborough,430,31UD,81.85,29529
+Hinckley and Bosworth,431,31UE,81.9,24259
+Melton,433,31UG,81.7,22769
+North West Leicestershire,434,31UH,80.3,25075
+Oadby and Wigston,435,31UJ,81.45,24064
+Boston,437,32UH,80.5,19278
+East Lindsey,438,32UC,79.7,21621
+Lincoln,439,34,80.25,20710
+North Kesteven,440,34UB,77.45,23156
+South Holland,441,34UC,80.8,22592
+South Kesteven,442,34UD,80.3,26403
+West Lindsey,443,34UE,80.1,22292
+Breckland,444,33UB,81.4,20081
+Broadland,445,33UC,81.4,24056
+Great Yarmouth,446,33UD,79.75,20359
+King's Lynn and West Norfolk,447,33UE,81.05,20627
+North Norfolk,448,33UF,81.95,21590
+Norwich,449,33UG,80.45,23256
+South Norfolk,450,33UH,81.8,27369
+Corby,451,34UH,80.65,21683
+East Northamptonshire,453,37,80.05,26546
+Kettering,454,37UB,78.95,24729
+Northampton,455,37UC,79.5,24294
+South Northamptonshire,456,37UD,80.9,30833
+Wellingborough,457,37UE,80.65,23239
+Craven,464,36UB,82.1,24112
+Hambleton,465,36UC,81.9,24112
+Harrogate,466,36UD,81.25,25798
+Richmondshire,467,36UE,80.9,23486
+Ryedale,468,36UF,81.15,21421
+Scarborough,469,36UG,80.05,23206
+Selby,470,36UH,80.85,27737
+Ashfield,472,37UB,78.95,21109
+Bassetlaw,473,37UC,79.5,24117
+Broxtowe,474,37UD,80.9,26210
+Gedling,475,37UE,80.65,25304
+Mansfield,476,37UF,78.55,20072
+Newark and Sherwood,477,37UG,79.85,22618
+Rushcliffe,479,37UJ,82.05,33127
+Cherwell,480,38UB,81.25,27011
+Oxford,481,38UC,80.85,26084
+South Oxfordshire,482,38UD,81.95,39101
+Vale of White Horse,483,38UE,83.1,32700
+West Oxfordshire,484,38UF,82.15,33188
+Mendip,491,40UB,81.7,23975
+Sedgemoor,492,40UC,80.95,23016
+South Somerset,493,40UD,82,21385
+Taunton Deane,494,40UE,80.7,25179
+West Somerset,495,40UF,81.9,21717
+Cannock Chase,496,41UB,79.05,21475
+East Staffordshire,497,41UC,79.85,23647
+Lichfield,498,41UD,80.25,27228
+Newcastle-under-Lyme,499,41UE,79.4,21556
+South Staffordshire,500,41UF,80.7,25523
+Stafford,501,41UG,80.65,24739
+Staffordshire Moorlands,502,41UH,80.4,23085
+Tamworth,504,41UK,80.35,21720
+Babergh,505,42UB,81.55,26697
+Forest Heath,506,42UC,81.35,20793
+Ipswich,507,42UD,80.4,20503
+Mid Suffolk,508,42UE,82.25,26036
+St. Edmundsbury,509,42UF,81.85,25559
+Suffolk Coastal,510,42UG,82.2,26161
+Waveney,511,42UH,81,20858
+Elmbridge,512,43UB,82.55,20858
+Epsom and Ewell,513,43UC,83.7,34401
+Guildford,514,43UD,82.8,37908
+Mole Valley,515,43UE,82.2,34819
+Reigate and Banstead,516,43UF,81.6,38700
+Runnymede,517,43UG,82.2,29921
+Spelthorne,518,43UH,81.9,34180
+Surrey Heath,519,43UJ,82.2,34791
+Tandridge,520,43UK,81.85,31748
+Waverley,521,43UL,82.8,42655
+Woking,522,43UM,81.65,33112
+North Warwickshire,523,44UB,79.65,25294
+Nuneaton and Bedworth,524,44UC,79.3,22072
+Rugby,525,44UD,80.65,28466
+Stratford-on-Avon,526,44UE,81.25,28789
+Warwick,527,44UF,81.6,28854
+Adur,528,45UB,80.5,20647
+Arun,529,45UC,81.05,21999
+Chichester,530,45UD,81.35,28813
+Crawley,531,45UE,82.75,27289
+Horsham,532,45UF,82.05,32447
+Mid Sussex,533,45UG,81.7,30310
+Worthing,534,45UH,80.2,25672
 Cheshire East UA,601,00EQ,80.9,27155
 Cheshire West & Chester UA,602,00EW,80.4,26176
 Bedford UA,603,00KB,80.65,24886
@@ -447,7 +447,7 @@ Castlereagh,,95Y,80.1,21868
 Coleraine,,95C,80.35,21868
 Cookstown,,95I,79.25,21868
 Craigavon,,95N,79.7,21868
-Derry ,,95A,77.5,21868
+Derry,,95A,77.5,21868
 Down,,95R,80,21868
 Dungannon,,95M,79.2,21868
 Fermanagh,,95L,79.25,21868

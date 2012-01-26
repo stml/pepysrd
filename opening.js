@@ -3,11 +3,11 @@ var currentfulladdress;
 var birthshortaddress;
 var currentshortaddress;
 
-var birthlifeexpectancy;
-var currentlifeexpectancy;
+var birthlifeexpectancy = 0;
+var currentlifeexpectancy = 0;
 
-var birthincome;
-var currentincome;
+var birthincome = 0;
+var currentincome = 0;
 
 var birthlatitude;
 var birthlongitude;
@@ -81,43 +81,49 @@ function getONS() {
     		$.each(val.codes, function(key,val) {
     			if (key == 'ons' && val.length == 4) { birthONS = val; }
   				});
-  			if (val.type_name.indexOf("Middle Layer Super Output Area") != -1) {
-  				birthMLSOA = val.codes.ons;
-  				}
 			});
 		$.getJSON(currentmapiturl, function(data) {
     		$.each(data, function(key,val) {
     			$.each(val.codes, function(key,val) {
     				if (key == 'ons' && val.length == 4) { currentONS = val; }
   					});
-  				if (val.type_name.indexOf("Middle Layer Super Output Area") != -1) {
-  					currentMLSOA = val.codes.ons;
-  					}
 				});
-			getLifeExpectancy(birthONS,currentONS);
-			getHouseholdIncome(birthMLSOA,currentMLSOA);
+				console.log(birthONS,currentONS);
+			getLifeData(birthONS,currentONS);
 			});
 		});
 	}
 	
-function getLifeExpectancy(birthONS,currentONS) {
+function getLifeData(birthONS,currentONS) {
     $.ajax({
         type: "GET",
-        url: "lifeexpectancy.csv",
+        url: "IncomeLifeExFinal.csv",
         dataType: "text",
         success: function(data) {
         	var lines = data.split(/\r\n|\n/);
 			for (var i=0; i<lines.length; i++) {
         		var data = lines[i].split(',');
-        		if (data[0] == birthONS) {
-        			birthlifeexpectancy = data[1];
+        		if (data[2] == birthONS) {
+        			birthlifeexpectancy = data[3];
+        			birthincome = data[4];
         			}
-        		if (data[0] == currentONS) {
-        			currentlifeexpectancy = data[1];
+        		if (data[2] == currentONS) {
+        			currentlifeexpectancy = data[3];
+        			currentincome = data[4];
         			}
 				}
-			$('#birthplace > ul').append('<li id="birthlifeexpectancy">Avg Life Expectancy: '+birthlifeexpectancy+' years</li>');
-			$('#currentplace > ul').append('<li id="currentlifeexpectancy">Avg Life Expectancy: '+currentlifeexpectancy+' years</li>');
+			// insert nationwide averages if above fails
+			if (birthlifeexpectancy == 0) { birthlifeexpectancy = 80.3; }
+			if (currentlifeexpectancy == 0) { currentlifeexpectancy = 80.3 ; }
+			if (birthincome == 0) { birthincome = 26565.65; }
+			if (currentincome == 0) { currentincome = 26565.65; }
+			
+			$('#birthplace > ul').append('<li id="birthlifeexpectancy">Average Life Expectancy: '+birthlifeexpectancy+' years</li>');
+			$('#currentplace > ul').append('<li id="currentlifeexpectancy">Average Life Expectancy: '+currentlifeexpectancy+' years</li>');
+			
+			$('#birthplace > ul').append('<li id="birthincome">Average Annual Income: &pound;'+birthincome+'</li>');
+			$('#currentplace > ul').append('<li id="currentincome">Average Annual Income: &pound;'+currentincome+'</li>');
+			
 			if (birthlifeexpectancy > currentlifeexpectancy) {
 				var lifeexpectancydifference = Math.round((birthlifeexpectancy - currentlifeexpectancy)*100) / 100;
 				$('#lifeexpectancydifference').html('Your life expectancy is '+lifeexpectancydifference+' years shorter.');
@@ -126,41 +132,25 @@ function getLifeExpectancy(birthONS,currentONS) {
 				var lifeexpectancydifference = Math.round((currentlifeexpectancy - birthlifeexpectancy)*100) / 100;
 				$('#lifeexpectancydifference').html('You\'ll live '+lifeexpectancydifference+' years longer.');
 				}
-			}
-     	});
-	}
-	
-function getHouseholdIncome(birthMLSOA,currentMLSOA) {
-    $.ajax({
-        type: "GET",
-        url: "householdincome.csv",
-        dataType: "text",
-        success: function(data) {
-        	var lines = data.split(/\r\n|\n/);
-			for (var i=0; i<lines.length; i++) {
-        		var data = lines[i].split(',');
-        		if (data[1] == birthMLSOA) {
-        			birthincome = data[2];
-        			}
-        		if (data[1] == currentMLSOA) {
-        			currentincome = data[2];
-        			}
-				}
-			$('#birthplace > ul').append('<li id="birthincome">Avg Household Weekly Income: &pound;'+birthincome+'</li>');
-			$('#currentplace > ul').append('<li id="currentincome">Avg Household Weekly Income: &pound;'+currentincome+'</li>');
+				
 			var incomedifference = currentincome - birthincome;
 			if (incomedifference > 0) {
 				var incomedifference = Math.round((currentincome - birthincome)*100) / 100;
-				$('#incomedifference').html('Household income is &pound;'+incomedifference+' more a week.');
+				$('#incomedifference').html('Your average income is &pound;'+incomedifference+' more a year.');
 				}
 			if (incomedifference < 0) {
 				var incomedifference = Math.round((birthincome - currentincome)*100) / 100;
-				$('#incomedifference').html('Household income is &pound;'+Math.abs(incomedifference)+' less a week.');
+				$('#incomedifference').html('Your average income is &pound;'+Math.abs(incomedifference)+' less a year.');
 				}
+				
+			// make the incomenumbers tidy with commas
+   			$('#incomedifference').text($('#incomedifference').text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+   			$('#birthincome').text($('#birthincome').text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+   			$('#currentincome').text($('#currentincome').text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
 			}
      	});
 	}
-  
+	  
 function calcRoute() {
 	var request = {
 		origin: birthfulladdress, 
