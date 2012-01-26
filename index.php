@@ -33,6 +33,8 @@ function initialize(){
    	
    	var birthaddress;
    	var currentaddress;
+   	var birthcountry;
+   	var currentcountry;
 
    	var birthaddressflag = false;
    	var currentaddressflag = false;
@@ -50,11 +52,17 @@ function initialize(){
 					$('#birthlatitude').val(item.geometry.location.lat());
 					$('#birthlongitude').val(item.geometry.location.lng());
 					birthaddress = item.formatted_address;
+					for (var i = 0; i < item.address_components.length; i++) {
+						if ( item.address_components[i].types[0] == 'country' ) {
+							birthcountry = item.address_components[i].short_name;
+							console.log(birthcountry);
+							}
+						}
 					return {
 						label:  item.formatted_address,
 						value: item.formatted_address,
 						latitude: item.geometry.location.lat(),
-						longitude: item.geometry.location.lng()
+						longitude: item.geometry.location.lng(),
 						}
 					}));
         		})
@@ -80,6 +88,12 @@ function initialize(){
 					$('#currentlatitude').val(item.geometry.location.lat());
 					$('#currentlongitude').val(item.geometry.location.lng());
 					currentaddress = item.formatted_address;
+					for (var i = 0; i < item.address_components.length; i++) {
+						if ( item.address_components[i].types[0] == 'country' ) {
+							currentcountry = item.address_components[i].short_name;
+							console.log(currentcountry);
+							}
+						}
 					return {
 						label:  item.formatted_address,
 						value: item.formatted_address,
@@ -134,6 +148,8 @@ function initialize(){
 <input type="hidden" id="birthlongitude" name="birthlongitude" value="" />
 <input type="hidden" id="currentlatitude" name="currentlatitude" value="" />
 <input type="hidden" id="currentlongitude" name="currentlongitude" value="" />
+<input type="hidden" id="birthcountry" name="birthcountry" value="" />
+<input type="hidden" id="currentcountry" name="currentcountry" value="" />
 
 <p><input id="submitbutton" type="submit" value="Let's Go" /></p>
 </form>
