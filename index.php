@@ -30,6 +30,13 @@ function initialize(){
 	geocoder = new google.maps.Geocoder();
 	var ne = new google.maps.LatLng(59.44507, 3.86718);
    	var sw = new google.maps.LatLng(48.10743, -13.18359);
+   	
+   	var birthaddress;
+   	var currentaddress;
+
+   	var birthaddressflag = false;
+   	var currentaddressflag = false;
+   	
 	$(function() {
 	$("#birthaddress").autocomplete({
 		source: function(request, response) {
@@ -41,8 +48,8 @@ function initialize(){
 				function(results, status) {
 				response($.map(results, function(item) {
 					$('#birthlatitude').val(item.geometry.location.lat());
-					console.log(item.geometry.location.lat(),item.geometry.location.lng())
 					$('#birthlongitude').val(item.geometry.location.lng());
+					birthaddress = item.formatted_address;
 					return {
 						label:  item.formatted_address,
 						value: item.formatted_address,
@@ -55,6 +62,12 @@ function initialize(){
       	select: function(event, ui) {
       		}
     	});
+
+	$("#birthaddress").blur(function() {
+  		$('#birthaddress').val(birthaddress);
+  		birthaddressflag = true;
+		});    	
+    	
 	$("#currentaddress").autocomplete({
 		source: function(request, response) {
 			geocoder.geocode( {
@@ -66,6 +79,7 @@ function initialize(){
 				response($.map(results, function(item) {
 					$('#currentlatitude').val(item.geometry.location.lat());
 					$('#currentlongitude').val(item.geometry.location.lng());
+					currentaddress = item.formatted_address;
 					return {
 						label:  item.formatted_address,
 						value: item.formatted_address,
@@ -78,6 +92,28 @@ function initialize(){
       	select: function(event, ui) {
       		}
     	});
+
+	$("#currentaddress").blur(function() {
+  		$('#currentaddress').val(currentaddress);
+  		currentaddressflag = true;
+		});
+	
+	$('#submitbutton').submit(function() {
+	  	return false;
+		});
+	
+	// double-check those values are input
+	$("#submitbutton").click(function() {
+		if (birthaddressflag && currentaddressflag) {
+			$('#birthaddress').val(birthaddress);
+			$('#currentaddress').val(currentaddress);	
+			$('#entryform').submit();
+			}
+		else {
+			alert('Hey! You need to fill in that form...')
+	  		return false;
+			}
+		});
 
   	});
   	}
@@ -92,14 +128,14 @@ function initialize(){
 
 <p><em>(Something encouraging...)</em></p>
 
-<form action="opening.php" method="post">
-<p>I was born in <input id="birthyear" type="text" name="birthyear" value=" " /> and grew up in <input type="text" id="birthaddress" name="birthaddress" value=" " />. Now I live in <input type="text" id="currentaddress" name="currentaddress" value=" " /></p>
+<form id="entryform" action="opening.php" method="post">
+<p>I was born in <select id="birthyear" name="birthyear" /><? for ($i=2010;$i>1900;$i--) { echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select> and grew up in <input type="text" id="birthaddress" name="birthaddress" value=" " />. Now I live in <input type="text" id="currentaddress" name="currentaddress" value=" " />.</p>
 <input type="hidden" id="birthlatitude" name="birthlatitude" value="" />
 <input type="hidden" id="birthlongitude" name="birthlongitude" value="" />
 <input type="hidden" id="currentlatitude" name="currentlatitude" value="" />
 <input type="hidden" id="currentlongitude" name="currentlongitude" value="" />
 
-<p><input type="submit" value="Wut?" /></p>
+<p><input id="submitbutton" type="submit" value="Let's Go" /></p>
 </form>
 
 </div>
