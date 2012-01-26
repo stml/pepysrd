@@ -55,7 +55,7 @@ function initialize(){
 					for (var i = 0; i < item.address_components.length; i++) {
 						if ( item.address_components[i].types[0] == 'country' ) {
 							birthcountry = item.address_components[i].short_name;
-							console.log(birthcountry);
+							$('#birthcountry').val(birthcountry);
 							}
 						}
 					return {
@@ -91,7 +91,7 @@ function initialize(){
 					for (var i = 0; i < item.address_components.length; i++) {
 						if ( item.address_components[i].types[0] == 'country' ) {
 							currentcountry = item.address_components[i].short_name;
-							console.log(currentcountry);
+							$('#currentcountry').val(currentcountry);
 							}
 						}
 					return {

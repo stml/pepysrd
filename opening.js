@@ -3,6 +3,11 @@ var currentfulladdress;
 var birthshortaddress;
 var currentshortaddress;
 
+var birthcountry;
+var currentcountry;
+
+var birthyear;
+
 var birthlifeexpectancy = 0;
 var currentlifeexpectancy = 0;
 
@@ -26,17 +31,31 @@ var map;
 
 
 $(document).ready(function() {
+	
+	birthyear = $('.birthyear').html();
+
 	birthfulladdress = $('.birthfulladdress').html();
 	currentfulladdress = $('.currentfulladdress').html();
 	birthshortaddress = birthfulladdress.split(",")[0];
 	currentshortaddress = currentfulladdress.split(",")[0]; 
+
+	birthcountry = $('.birthcountry').html();
+	currentcountry = $('.currentcountry').html();
 	
 	birthlatitude = $('.birthlatitude').html();
 	birthlongitude = $('.birthlongitude').html();
 	currentlatitude = $('.currentlatitude').html();
 	currentlongitude = $('.currentlongitude').html();
 	
-  	initialize();
+	$('h3#yearsdistance').html('In '+(2012-birthyear)+' years, you\'ve gone from '+birthshortaddress+' to '+currentshortaddress+'.');
+	console.log(birthcountry,currentcountry);
+	
+	if (birthcountry == 'GB' && currentcountry =='GB') {
+  		initialize();
+  		}
+  	else {
+  		internationalise();
+  		}
 	});
 	
 function initialize() {
@@ -166,7 +185,7 @@ function calcRoute() {
 				totalDistance = totalDistance + legs[i].distance.value;
 				}
 			totalDistanceInMiles = Math.round(totalDistance * 0.000621371192);
-			$('#distance').text(totalDistanceInMiles);
+			$('#distance').text('That\s a distance of '+totalDistanceInMiles+' miles.');
 			}
     	});
   	}

@@ -10,6 +10,7 @@
 </head>
 <body>
 <div id="querystring" style="display:none">
+<span class="birthyear"><?=$_POST["birthyear"]?></span>
 <span class="birthfulladdress"><?=$_POST["birthaddress"]?></span>
 <span class="currentfulladdress"><?=$_POST["currentaddress"]?></span>
 <span class="birthyear"><?=$_POST["birthyear"]?></span>
@@ -17,15 +18,17 @@
 <span class="birthlongitude"><?=$_POST["birthlongitude"]?></span>
 <span class="currentlatitude"><?=$_POST["currentlatitude"]?></span>
 <span class="currentlongitude"><?=$_POST["currentlongitude"]?></span>
+<span class="birthcountry"><?=$_POST["birthcountry"]?></span>
+<span class="currentcountry"><?=$_POST["birthcountry"]?></span>
 </div>
 
 <div class="container">
 
 <div class="sign"><h1>PEPYSRD.COM</h1> <span class="green">SW6</span> <span class="red">CITY OF SOMEWHERE</span></div>
 
-<h3>In <? $years = 2012 - $_POST["birthyear"]; echo $years;?> years, you've gone from <span class="birthshortaddress">A</span> to <span class="currentshortaddress">B</span>.</h3>
+<h3 id="yearsdistance"></h3>
 
-<p>That's a distance of <span id="distance">...</span> miles. <span id="lifeexpectancydifference"></span> <span id="incomedifference"></span> <span id="housepricedifference"></span></p>
+<p><span id="distance"></span> <span id="lifeexpectancydifference"></span> <span id="incomedifference"></span> <span id="housepricedifference"></span></p>
 
 <p><em>(Tweet/FB/Tumbl a short version of this, with a shortlink to the diagrams below)</em></p>
 
