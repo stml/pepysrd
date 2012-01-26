@@ -50,44 +50,65 @@ $(document).ready(function() {
 	$('h3#yearsdistance').html('In '+(2012-birthyear)+' years, you\'ve gone from '+birthshortaddress+' to '+currentshortaddress+'.');
 	console.log(birthcountry,currentcountry);
 	
-	if (birthcountry == 'GB' && currentcountry =='GB') {
-  		initialize();
-  		}
-  	else {
-  		internationalise();
-  		}
-	});
-	
-function initialize() {
-
 	// SET THE MAP
-	directionsDisplay = new google.maps.DirectionsRenderer();
-    var navel = new google.maps.LatLng(0,0);
+    var london = new google.maps.LatLng(51.508129, -0.128005);
     var myOptions = {
 		zoom:7,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		center: navel
+		center: london
 		}
 	map = new google.maps.Map(document.getElementById("directions_map"), myOptions);
-    directionsDisplay.setMap(map);
     
-    // Add route and distances
-    calcRoute();
-    
-    // DO HOUSE PRICES STUFF
-    setHousePrices();
-    
-    // DO stuff than requires ONS details
-    getONS();
-
-	// set map backgrounds   	
+    // set map backgrounds   	
    	var birthplacebackground = "url('http://maps.googleapis.com/maps/api/staticmap?center="+birthfulladdress+"&zoom=14&size=330x330&maptype=satellite&sensor=false')";
    	$('#birthplace').css('background-image', birthplacebackground );
    	$('.birthshortaddress').text(birthshortaddress);
    	var currentplacebackground = "url('http://maps.googleapis.com/maps/api/staticmap?center="+currentfulladdress+"&zoom=14&size=330x330&maptype=satellite&sensor=false')";	
    	$('#currentplace').css('background-image', currentplacebackground );  
    	$('.currentshortaddress').text(currentshortaddress);
-   	
+
+	
+	if (birthcountry == 'GB' && currentcountry =='GB') {
+  		uk();
+  		}
+  	else {
+  		internationalise();
+  		}
+	});
+  	
+/* STUFF FOR THE UK 
+------------------------------------------------------------------------------------------------------------------*/
+	
+function uk() {  
+    // Add route and distances
+    calcRoute();
+    // DO HOUSE PRICES STUFF
+    setHousePrices();
+    // DO stuff than requires ONS details
+    getONS();
+  	}
+
+// Route and distance calculation
+function calcRoute() {
+	directionsDisplay = new google.maps.DirectionsRenderer();
+	directionsDisplay.setMap(map);
+	var request = {
+		origin: birthfulladdress, 
+		destination: currentfulladdress,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING
+    	};
+	directionsService.route(request, function(response, status) {
+		if (status == google.maps.DirectionsStatus.OK) {
+			directionsDisplay.setDirections(response);
+			var legs = response.routes[0].legs;
+			var totalDistance = 0;
+			for(i in legs) {
+				totalDistance = totalDistance + legs[i].distance.value;
+				}
+			totalDistanceInMiles = Math.round(totalDistance * 0.000621371192);
+			$('#distance').text('That\s a distance of '+totalDistanceInMiles+' miles.');
+			}
+    	});
   	}
 
 //Get four-digit ONS area code
@@ -107,7 +128,6 @@ function getONS() {
     				if (key == 'ons' && val.length == 4) { currentONS = val; }
   					});
 				});
-				console.log(birthONS,currentONS);
 			getLifeData(birthONS,currentONS);
 			});
 		});
@@ -169,26 +189,6 @@ function getLifeData(birthONS,currentONS) {
 			}
      	});
 	}
-	  
-function calcRoute() {
-	var request = {
-		origin: birthfulladdress, 
-		destination: currentfulladdress,
-        travelMode: google.maps.DirectionsTravelMode.DRIVING
-    	};
-	directionsService.route(request, function(response, status) {
-		if (status == google.maps.DirectionsStatus.OK) {
-			directionsDisplay.setDirections(response);
-			var legs = response.routes[0].legs;
-			var totalDistance = 0;
-			for(i in legs) {
-				totalDistance = totalDistance + legs[i].distance.value;
-				}
-			totalDistanceInMiles = Math.round(totalDistance * 0.000621371192);
-			$('#distance').text('That\s a distance of '+totalDistanceInMiles+' miles.');
-			}
-    	});
-  	}
 
 function setHousePrices() {
     var birthplaceurl = 'http://api.nestoria.co.uk/api?country=uk&pretty=1&action=metadata&place_name='+birthshortaddress+'&encoding=json&callback=?';
@@ -223,3 +223,45 @@ function setHousePrices() {
 			});
    		});
    	}
+   	
+/* IN CASE OF NON-UK VISITOR
+------------------------------------------------------------------------------------------------------------------*/
+function internationalise() {
+	calcDistance();
+	}
+
+function calcDistance() {
+	var startpoint = new google.maps.LatLng(birthlatitude,birthlongitude);
+	var endpoint = new google.maps.LatLng(currentlatitude,currentlongitude);
+	var startmarker = new google.maps.Marker({ position: startpoint, map: map,});
+	var endmarker = new google.maps.Marker({ position: endpoint, map: map,});
+	var routeCoordinates = [startpoint,endpoint];
+  	var routePath = new google.maps.Polyline({
+    	path: routeCoordinates,
+    	geodesic: true,
+    	strokeColor: "#FF0000",
+    	strokeOpacity: 1.0,
+    	strokeWeight: 2
+  		});
+	routePath.setMap(map);
+	var bounds = new google.maps.LatLngBounds();
+	var path = routePath.getPath();
+    for (var i = 0; i < path.getLength(); i++) {
+		bounds.extend(path.getAt(i));
+		}
+	map.fitBounds(bounds);
+	// distance
+	var R = 6371; // km
+	console.log(birthlatitude,birthlongitude,currentlatitude,currentlongitude);
+	var dLat = (currentlatitude-birthlatitude)*(Math.PI / 180);
+	var dLon = (currentlongitude-birthlongitude)*(Math.PI / 180);
+	var lat1 = (birthlatitude)*(Math.PI / 180);
+	var lat2 = (currentlatitude)*(Math.PI / 180);
+	var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+	var d = R * c;
+	var totalDistanceInMiles = Math.round(d * 0.621371192);
+	$('#distance').text('That\s a distance of '+totalDistanceInMiles+' miles.');
+	$('#distance').text($('#distance').text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+  	}

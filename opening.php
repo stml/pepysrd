@@ -19,7 +19,7 @@
 <span class="currentlatitude"><?=$_POST["currentlatitude"]?></span>
 <span class="currentlongitude"><?=$_POST["currentlongitude"]?></span>
 <span class="birthcountry"><?=$_POST["birthcountry"]?></span>
-<span class="currentcountry"><?=$_POST["birthcountry"]?></span>
+<span class="currentcountry"><?=$_POST["currentcountry"]?></span>
 </div>
 
 <div class="container">
