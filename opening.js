@@ -192,7 +192,6 @@ function getLifeData(birthONS,currentONS) {
 function setHousePrices() {
     var birthplaceurl = 'http://api.nestoria.co.uk/api?country=uk&pretty=1&action=metadata&centre_point='+birthlatitude+','+birthlongitude+'&encoding=json&callback=?';
     var currentplaceurl = 'http://api.nestoria.co.uk/api?country=uk&pretty=1&action=metadata&centre_point='+currentlatitude+','+currentlongitude+'&encoding=json&callback=?';
-    console.log(birthplaceurl,currentplaceurl);
     var birthplaceaverageprice;
     var currentplaceaverageprice;
     $.getJSON(birthplaceurl, function(bpdata) {
@@ -252,7 +251,6 @@ function calcDistance() {
 	map.fitBounds(bounds);
 	// distance
 	var R = 6371; // km
-	console.log(birthlatitude,birthlongitude,currentlatitude,currentlongitude);
 	var dLat = (currentlatitude-birthlatitude)*(Math.PI / 180);
 	var dLon = (currentlongitude-birthlongitude)*(Math.PI / 180);
 	var lat1 = (birthlatitude)*(Math.PI / 180);
