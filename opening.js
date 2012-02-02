@@ -48,7 +48,6 @@ $(document).ready(function() {
 	currentlongitude = $('.currentlongitude').html();
 	
 	$('h3#yearsdistance').html('In '+(2012-birthyear)+' years, you\'ve gone from '+birthshortaddress+' to '+currentshortaddress+'.');
-	console.log(birthcountry,currentcountry);
 	
 	// SET THE MAP
     var london = new google.maps.LatLng(51.508129, -0.128005);
@@ -191,8 +190,9 @@ function getLifeData(birthONS,currentONS) {
 	}
 
 function setHousePrices() {
-    var birthplaceurl = 'http://api.nestoria.co.uk/api?country=uk&pretty=1&action=metadata&place_name='+birthshortaddress+'&encoding=json&callback=?';
-    var currentplaceurl = 'http://api.nestoria.co.uk/api?country=uk&pretty=1&action=metadata&place_name='+currentshortaddress+'&encoding=json&callback=?';
+    var birthplaceurl = 'http://api.nestoria.co.uk/api?country=uk&pretty=1&action=metadata&centre_point='+birthlatitude+','+birthlongitude+'&encoding=json&callback=?';
+    var currentplaceurl = 'http://api.nestoria.co.uk/api?country=uk&pretty=1&action=metadata&centre_point='+currentlatitude+','+currentlongitude+'&encoding=json&callback=?';
+    console.log(birthplaceurl,currentplaceurl);
     var birthplaceaverageprice;
     var currentplaceaverageprice;
     $.getJSON(birthplaceurl, function(bpdata) {
