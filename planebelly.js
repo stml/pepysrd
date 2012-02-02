@@ -44,13 +44,17 @@ function sortFlights(result) {
 			var thisFlight = [];
 			thisFlight['distance'] = calcDistance(flight.latitude, flight.longitude, latitude, longitude);
 			thisFlight['altitude'] = flight.altitude;
-			thisFlight['bearing'] = calcBearing(latitude, longitude, flight.latitude, flight.longitude);
+			thisFlight['latitude'] = flight.latitude;
+			thisFlight['longitude'] = flight.longitude;
+			thisFlight['bearing'] = ''; // calc this later
 			thisFlight['ident'] = flight.ident;
 			thisFlight['origin'] = flight.origin;
 			thisFlight['destination'] = flight.destination;
 			thisFlight['heading'] = flight.heading;
 			thisFlight['groundspeed'] = flight.groundspeed;
 			thisFlight['type'] = flight.type;
+			thisFlight['departureTime'] = flight.departureTime;
+			console.log(flight);
 			flights.push(thisFlight);
 			}
   		}
@@ -60,9 +64,34 @@ function sortFlights(result) {
   				nearestFlight = flights[i];
   				}
   			}
-  		console.log(nearestFlight);
-  		$('.working').css("display","none");
-  		$('#info').html(nearestFlight['distance']+" miles to the "+nearestFlight['bearing']+" of you, right now.<br><br>At "+nearestFlight['altitude']+"00 feet, travelling at "+nearestFlight['groundspeed']+"mph, <a href='http://flightaware.com/live/flight/"+nearestFlight['ident']+"' target='_blank'>"+nearestFlight['ident']+"</a> from "+nearestFlight['origin']+" to "+nearestFlight['destination']+", heading "+nearestFlight['heading']+"&deg;.");
+  		nearestFlight['bearing'] = calcBearing(latitude, longitude, thisFlight['latitude'], thisFlight['longitude']);
+  		var date = new Date(nearestFlight['departureTime']*1000);
+  		var hours = date.getHours();
+		var minutes = date.getMinutes();
+		if (minutes.length < 2) { var departuretime = hours + ':0' + minutes; }
+		else { var departuretime = hours + ':' + minutes; }
+	
+		$.ajax({
+        	type: "GET",
+        	url: "airportcodes.csv",
+        	dataType: "text",
+        	success: function(data) {
+        		var lines = data.split(/\r\n|\n/);
+				for (var i=0; i<lines.length; i++) {
+        			var data = lines[i].split(',');
+        			if (data[1] == nearestFlight['origin']) {
+        				nearestFlight['origin_name'] = data[3].replace(/\;/g,",");
+        				}
+        			if (data[1] == nearestFlight['destination']) {
+        				nearestFlight['destination_name'] = data[3].replace(/\;/g,",");
+        				}
+					}
+				  	$('.working').css("display","none");
+
+$('#info').html(nearestFlight['distance']+" miles to the "+nearestFlight['bearing']+" of you, right now.<br><br>At "+nearestFlight['altitude']+"00 feet, travelling at "+nearestFlight['groundspeed']+"mph on a heading of "+nearestFlight['heading']+"&deg;: <a href='http://flightaware.com/live/flight/"+nearestFlight['ident']+"' target='_blank'>Flight "+nearestFlight['ident']+"</a> to "+nearestFlight['destination_name']+", which took off from "+nearestFlight['origin_name']+" at "+departuretime+".");
+
+			}
+		});
 	}
 	
 function calcDistance(startlat, startlon, endlat, endlon) {
