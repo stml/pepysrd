@@ -18,7 +18,20 @@
 <p><em>(Something encouraging...)</em></p>
 
 <form id="entryform" action="opening.php" method="post">
-<p>I was born in <select id="birthyear" name="birthyear" /><? for ($i=2010;$i>1900;$i--) { echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select> and grew up in <input type="text" id="birthaddress" name="birthaddress" value=" " />. Now I live in <input type="text" id="currentaddress" name="currentaddress" value=" " />.</p>
+<p>I was born in <select id="birthmonth" name="birthmonth" />
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select> <select id="birthyear" name="birthyear" /><? for ($i=2010;$i>1900;$i--) { echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select> and grew up in <input type="text" id="birthaddress" name="birthaddress" value=" " />. Now I live in <input type="text" id="currentaddress" name="currentaddress" value=" " />.</p>
 <input type="hidden" id="birthlatitude" name="birthlatitude" value="" />
 <input type="hidden" id="birthlongitude" name="birthlongitude" value="" />
 <input type="hidden" id="currentlatitude" name="currentlatitude" value="" />

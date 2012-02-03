@@ -10,6 +10,7 @@
 </head>
 <body>
 <div id="querystring" style="display:none">
+<span class="birthmonth"><?=$_POST["birthmonth"]?></span>
 <span class="birthyear"><?=$_POST["birthyear"]?></span>
 <span class="birthfulladdress"><?=$_POST["birthaddress"]?></span>
 <span class="currentfulladdress"><?=$_POST["currentaddress"]?></span>
