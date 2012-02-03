@@ -227,6 +227,39 @@ function setHousePrices() {
 ------------------------------------------------------------------------------------------------------------------*/
 function internationalise() {
 	calcDistance();
+	getIntlLifeEx();
+	}
+	
+function getIntlLifeEx() {
+	$.ajax({
+		type: "GET",
+		url: "GlobalLifeEx.csv",
+		dataType: "text",
+		success: function(data) {
+			var lines = data.split(/\r\n|\n/);
+			for (var i=0; i<lines.length; i++) {
+				var data = lines[i].split(',');
+				if (data[3] == birthcountry) {
+					birthlifeexpectancy = data[2];
+					}
+				if (data[3] == currentcountry) {
+					currentlifeexpectancy = data[2];
+					}
+				}
+			if (birthlifeexpectancy != 0 && currentlifeexpectancy != 0) {
+				$('#birthplace > ul').append('<li id="birthlifeexpectancy">Average Life Expectancy: '+birthlifeexpectancy+' years</li>');
+				$('#currentplace > ul').append('<li id="currentlifeexpectancy">Average Life Expectancy: '+currentlifeexpectancy+' years</li>');
+				if (birthlifeexpectancy > currentlifeexpectancy) {
+					var lifeexpectancydifference = Math.round((birthlifeexpectancy - currentlifeexpectancy)*100) / 100;
+					$('#lifeexpectancydifference').html('Your life expectancy is '+lifeexpectancydifference+' years shorter.');
+					}
+				else if (birthlifeexpectancy < currentlifeexpectancy) {
+					var lifeexpectancydifference = Math.round((currentlifeexpectancy - birthlifeexpectancy)*100) / 100;
+					$('#lifeexpectancydifference').html('You\'ll live '+lifeexpectancydifference+' years longer.');
+					}
+				}
+			}
+		});
 	}
 
 function calcDistance() {

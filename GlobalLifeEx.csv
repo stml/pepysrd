@@ -1,0 +1,226 @@
+Sub-Saharan Africa,947,52.51,
+AFRICA,903,55.16,
+Eastern Africa,910,54.403,
+Burundi,108,48.811,BI
+Comoros,174,59.654,KM
+Djibouti,262,56.635,DJ
+Eritrea,232,60.025,ER
+Ethiopia,231,57.213,ET
+Kenya,404,54.976,KE
+Madagascar,450,65.768,MG
+Malawi,454,51.554,MW
+Mauritius,480,72.798,MU
+Mayotte,175,77.138,YT
+Mozambique,508,48.768,MZ
+R̩union,638,77.256,RE
+Rwanda,646,53.936,RW
+Somalia,706,50.237,SO
+Uganda,800,52.241,UG
+United Republic of Tanzania,834,55.438,TZ
+Zambia,894,46.926,ZM
+Zimbabwe,716,46.589,ZW
+Middle Africa,911,48.502,
+Angola,24,49.622,AO
+Cameroon,120,49.965,CM
+Central African Republic,140,45.91,CF
+Chad,148,48.519,TD
+Congo,178,56.021,CG
+Democratic Republic of the Congo,180,47.415,CD
+Equatorial Guinea,226,50.096,GQ
+Gabon,266,61.279,GA
+Sao Tome and Principe,678,63.816,ST
+Northern Africa,912,69.356,
+Algeria,12,72.301,DZ
+Egypt,818,72.345,EG
+Libyan Arab Jamahiriya,434,74.035,LY
+Morocco,504,71.16,MA
+Sudan,736,60.265,SD
+Tunisia,788,73.901,TN
+Western Sahara,732,65.948,EH
+Southern Africa,913,51.283,
+Botswana,72,53.332,BW
+Lesotho,426,46.019,LS
+Namibia,516,61.091,NA
+South Africa,710,51.202,ZA
+Swaziland,748,47.355,SZ
+Western Africa,914,52.287,
+Benin,204,54.637,BJ
+Burkina Faso,854,53.871,BF
+Cape Verde,132,73.539,CV
+C̫te d'Ivoire,384,53.022,CI
+Gambia,270,57.339,GM
+Ghana,288,62.71,GH
+Guinea,324,52.437,GN
+Guinea-Bissau,624,46.76,GW
+Liberia,430,54.418,LR
+Mali,466,49.988,ML
+Mauritania,478,57.529,MR
+Niger,562,53.083,NE
+Nigeria,566,50.264,NG
+Senegal,686,58.174,SN
+Sierra Leone,694,46.263,SL
+Togo,768,55.689,TG
+ASIA,935,68.984,
+Eastern Asia,906,74.034,
+China,156,72.711,CN
+China, Hong Kong SAR,344,81.611,HK
+China, Macao SAR,446,80.029,MO
+Dem. People's Republic of Korea,408,68.391,KP
+Japan,392,82.729,JP
+Mongolia,496,67.318,MN
+Republic of Korea,410,80.003,KR
+Other non-specified areas,158,78.189,TW
+South-Central Asia,921,64.535,
+Central Asia,5500,66.264,
+Kazakhstan,398,65.776,KZ
+Kyrgyzstan,417,66.701,KG
+Tajikistan,762,66.444,TJ
+Turkmenistan,795,64.645,TM
+Uzbekistan,860,67.436,UZ
+Southern Asia,5501,64.476,
+Afghanistan,4,47.32,AF
+Bangladesh,50,67.842,BD
+Bhutan,64,65.794,BT
+India,356,64.187,IN
+Iran (Islamic Republic of),364,72.055,IR
+Maldives,462,75.548,MV
+Nepal,524,67.419,NP
+Pakistan,586,64.567,PK
+Sri Lanka,144,74.249,LK
+South-Eastern Asia,920,69.298,
+Brunei Darussalam,96,77.514,BN
+Cambodia,116,61.537,KH
+Indonesia,360,67.863,ID
+Lao People's Democratic Republic,418,66.062,LA
+Malaysia,458,73.376,MY
+Myanmar,104,63.536,MM
+Philippines,608,67.803,PH
+Singapore,702,80.596,SG
+Thailand,764,73.561,TH
+Timor-Leste,626,60.797,TL
+Viet Nam,704,74.346,VN
+Western Asia,922,71.656,
+Armenia,51,73.689,AM
+Azerbaijan,31,70.121,AZ
+Bahrain,48,74.604,BH
+Cyprus,196,78.943,CY
+Georgia,268,73.045,GE
+Iraq,368,67.32,IQ
+Israel,376,80.694,IL
+Jordan,400,72.91,JO
+Kuwait,414,74.168,KW
+Lebanon,422,71.997,LB
+Occupied Palestinian Territory,275,72.167,PS
+Oman,512,72.58,OM
+Qatar,634,77.879,QA
+Saudi Arabia,682,73.134,SA
+Syrian Arab Republic,760,75.345,SY
+Turkey,792,72.959,TR
+United Arab Emirates,784,75.937,AE
+Yemen,887,63.941,YE
+EUROPE,908,75.362,
+Eastern Europe,923,69.721,
+Belarus,112,69.438,BY
+Bulgaria,100,72.714,BG
+Czech Republic,203,77.008,CZ
+Hungary,348,73.642,HU
+Poland,616,75.511,PL
+Republic of Moldova,498,68.232,MD
+Romania,642,73.159,RO
+Russian Federation,643,67.676,RU
+Slovakia,703,74.724,SK
+Ukraine,804,67.541,UA
+Northern Europe,924,79.036,
+Channel Islands,830,79.511,
+Denmark,208,78.254,DK
+Estonia,233,73.912,EE
+Finland,246,79.339,FI
+Iceland,352,81.276,IS
+Ireland,372,79.682,IE
+Latvia,428,72.268,LV
+Lithuania,440,71.305,LT
+Norway,578,80.453,NO
+Sweden,752,80.882,SE
+United Kingdom,826,79.576,GB
+Southern Europe,925,79.695,
+Albania,8,76.375,AL
+Bosnia and Herzegovina,70,75.116,BA
+Croatia,191,76.013,HR
+Greece,300,79.515,GR
+Italy,380,81.374,IT
+Malta,470,78.802,MT
+Montenegro,499,74.014,ME
+Portugal,620,78.588,PT
+Serbia,688,74.001,RS
+Slovenia,705,78.589,SI
+Spain,724,80.478,ES
+TFYR Macedonia,807,74.221,MK
+Western Europe,926,80.301,
+Austria,40,80.244,AT
+Belgium,56,79.774,BE
+France,250,80.951,FR
+Germany,276,79.848,DE
+Luxembourg,442,79.389,LU
+Netherlands,528,80.198,NL
+Switzerland,756,81.812,CH
+LATIN AMERICA AND THE CARIBBEAN,904,73.41,
+Caribbean,915,71.641,
+Aruba,533,74.753,AW
+Bahamas,44,74.792,BS
+Barbados,52,76.249,BB
+Cuba,192,78.504,CU
+Dominican Republic,214,72.523,DO
+Grenada,308,75.348,GD
+Guadeloupe,312,79.387,GP
+Haiti,332,60.985,HT
+Jamaica,388,72.244,JM
+Martinique,474,80.066,MQ
+Netherlands Antilles,530,76.142,AN
+Puerto Rico,630,78.696,PR
+Saint Lucia,662,73.924,LC
+Saint Vincent and the Grenadines,670,71.635,VC
+Trinidad and Tobago,780,69.4,TT
+United States Virgin Islands,850,78.937,VI
+Central America,916,75.183,
+Belize,84,75.341,BZ
+Costa Rica,188,78.869,CR
+El Salvador,222,71.428,SV
+Guatemala,320,70.265,GT
+Honduras,340,72.072,HN
+Mexico,484,76.188,MX
+Nicaragua,558,72.98,NI
+Panama,591,75.506,PA
+South America,931,72.959,
+Argentina,32,75.301,AR
+Bolivia (Plurinational State of),68,65.558,BO
+Brazil,76,72.239,BR
+Chile,152,78.648,CL
+Colombia,170,72.915,CO
+Ecuador,218,75.027,EC
+French Guiana,254,75.886,GF
+Guyana,328,68.696,GY
+Paraguay,600,71.725,PY
+Peru,604,73.178,PE
+Suriname,740,69.646,SR
+Uruguay,858,76.358,UY
+Venezuela (Bolivarian Republic of),862,73.725,VE
+NORTHERN AMERICA,905,78.218,
+Canada,124,80.536,CA
+United States of America,840,77.968,US
+OCEANIA,909,76.65,
+Australia/New Zealand,927,81.216,
+Australia,36,81.436,AU
+New Zealand,554,80.127,NZ
+Melanesia,928,63.137,
+Fiji,242,68.803,FJ
+New Caledonia,540,75.33,NC
+Papua New Guinea,598,61.504,PG
+Solomon Islands,90,66.391,SB
+Vanuatu,548,69.99,VU
+Micronesia,954,71.92,
+Guam,316,75.503,GU
+Micronesia (Fed. States of),583,68.347,FM
+Polynesia,957,72.901,
+French Polynesia,258,74.485,PF
+Samoa,882,71.537,WS
+Tonga,776,71.844,TO
