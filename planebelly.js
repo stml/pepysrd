@@ -54,7 +54,6 @@ function sortFlights(result) {
 			thisFlight['groundspeed'] = flight.groundspeed;
 			thisFlight['type'] = flight.type;
 			thisFlight['departureTime'] = flight.departureTime;
-			console.log(flight);
 			flights.push(thisFlight);
 			}
   		}
@@ -81,17 +80,33 @@ function sortFlights(result) {
         			var data = lines[i].split(',');
         			if (data[1] == nearestFlight['origin']) {
         				nearestFlight['origin_name'] = data[3].replace(/\;/g,",");
+        				nearestFlight['origin_iata'] = data[0];
         				}
         			if (data[1] == nearestFlight['destination']) {
         				nearestFlight['destination_name'] = data[3].replace(/\;/g,",");
+        				nearestFlight['destination_iata'] = data[0];
         				}
 					}
 				  	$('.working').css("display","none");
-
-$('#info').html(nearestFlight['distance']+" miles to the "+nearestFlight['bearing']+" of you, right now.<br><br>At "+nearestFlight['altitude']+"00 feet, travelling at "+nearestFlight['groundspeed']+"mph on a heading of "+nearestFlight['heading']+"&deg;: <a href='http://flightaware.com/live/flight/"+nearestFlight['ident']+"' target='_blank'>Flight "+nearestFlight['ident']+"</a> to "+nearestFlight['destination_name']+", which took off from "+nearestFlight['origin_name']+" at "+departuretime+".");
-
+					
+					if (	nearestFlight['type'].substring(0,1) == 'A'
+						||	nearestFlight['type'].substring(0,1) == 'E'
+						||	nearestFlight['type'].substring(0,1) == 'I'
+						|| 	nearestFlight['type'].substring(0,1) == 'O'
+						||	nearestFlight['type'].substring(0,1) == 'U'
+						||	nearestFlight['type'].substring(0,1) == 'H') {
+							var typestring = 'An '+nearestFlight['type'];
+						}
+					else {
+							var typestring = 'A '+nearestFlight['type'];
+						}
+					
+$('#info').html(nearestFlight['distance']+" miles to the "+nearestFlight['bearing']+" of you, right now.<br><br>"+typestring+" plane, at "+nearestFlight['altitude']+"00 feet, travelling at "+nearestFlight['groundspeed']+"mph on a heading of "+nearestFlight['heading']+"&deg;: <a href='http://flightaware.com/live/flight/"+nearestFlight['ident']+"' target='_blank'>Flight "+nearestFlight['ident']+"</a> to "+nearestFlight['destination_iata']+" ("+nearestFlight['destination_name']+"), which took off from "+nearestFlight['origin_iata']+" ("+nearestFlight['origin_name']+") at "+departuretime+".");
+					//callAMEE(nearestFlight['type'],nearestFlight['origin_iata'],nearestFlight['destination_iata']);
 			}
 		});
+		
+
 	}
 	
 function calcDistance(startlat, startlon, endlat, endlon) {
@@ -124,3 +139,19 @@ function calcBearing(lat1, lon1, lat2, lon2) {
 	else if (brng3 >= 247.5 && brng3 < 292.5) { return 'West'; }
 	else if (brng3 >= 292.5 && brng3 < 337.5) { return 'Northwest'; }
 	}
+	
+/*
+function callAMEE(plane_type, origin_iata,destination_iata) {
+	var url = 'https://stage.amee.com/data/transport/plane/specific/jet/drill?type=plane_type';
+	var url = 'https://stage.amee.com/data/transport/plane/specific/jet?IATACode1='+origin_iata+'&IATACode2='+destination_iata;
+	console.log(plane_type);
+	}
+*/
+	
+	
+	
+	
+	
+	
+	
+	
