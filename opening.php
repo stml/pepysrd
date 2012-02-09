@@ -4,7 +4,7 @@
 <link rel='stylesheet' type='text/css' media='screen' href='styles2.css' />
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgGTKsngvpw0m6KOhsAgHYOeKFdFNzVOs&sensor=false"></script> 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  
+<script src="jquery.min.js" type="text/javascript"></script>  
 <script type="text/javascript" src="opening.js"></script>
 
 </head>
