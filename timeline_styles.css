@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+body {
+	background: #fff;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+.container {	
+	text-align: center;
+	}
+
+.hidden {
+	display: none;
+	}
+	
+#timeline {
+	height: 500px;
+	width: 500px;
+	border: 1px solid #000;
+	overflow: hidden;
+	margin: 10px auto;
+	text-align: center;
+	position: relative;
+	}
+#timeline_marker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;	
+	}
+#timeline_background {
+	position: absolute;
+	top: 0;
+	left: 202px;
+	z-index: 10;
+	} 
+#timeline_arrow {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	z-index: 11;	
+	}
+	
+.yourtime {
+	font-size: 32px;
+	}
