@@ -5,6 +5,7 @@
 
 <script src="jquery.min.js" type="text/javascript"></script>  
 <script src="jquery-ui.min.js"></script>
+<script src="soundmanager2-nodebug-jsmin.js"></script>
 <script type="text/javascript" src="timeline.js"></script>
 
 </head>
@@ -66,7 +67,7 @@
 </div>
 
 <div id="facebook">
-<p class="date 2004"><strong>February 4th, 2004:</strong> Mark Zuckerberg launches "thefacebook" at Harvard University. The first profile is, of course, <a href="www.facebook.com/profile.php?id=4">his own</a></p>
+<p class="date 2004"><strong>February 4th, 2004:</strong> Mark Zuckerberg launches "thefacebook" at Harvard University. The first profile is, of course, <a href="www.facebook.com/profile.php?id=4">his own</a>.</p>
 <p class="date 2012"><strong>2012</strong>: As of February 2012, Facebook has 845 million users worldwide.</p>
 </div>
 
@@ -78,7 +79,7 @@
 <div id="twitter">
 <p class="date 2006"><strong>March 21st, 2006:</strong> Twitter co-founder Jack Dorsey posts the first tweet at 9:02pm: "<a href="https://twitter.com/#!/jack/status/29">inviting coworkers</a>".</p>
 <p class="date 2010"><strong>January 22nd 2010:</strong>: Astronaut Timothy Creamer posts <a href="https://twitter.com/#!/Astro_TJ/status/8062317551">the first tweet from outer space</a>, from the International Space Station.</p>
-<p class="date 2011"><strong>2011:</strong>: Twitter's 200 million users collectively post 140 million 140-character tweets every single day.</p>
+<p class="date 2011"><strong>2011:</strong> Twitter's 200 million users collectively post 140 million 140-character tweets every single day.</p>
 </div>
 
 </div><!-- dates -->

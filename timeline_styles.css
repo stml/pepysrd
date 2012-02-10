@@ -17,6 +17,7 @@ body {
 #dates p {
 	display: none;
 	text-align: left;
+	margin-bottom: 5px;
 	}
 	
 #timeline {
@@ -64,4 +65,5 @@ body {
 .yourtime {
 	font-size: 32px;
 	margin-bottom: 10px;
+	color: #c00;
 	}
