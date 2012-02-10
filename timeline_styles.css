@@ -6,14 +6,17 @@ body {
 	background: #fff;
 	color: #333;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
 	}
 	
 .container {	
-	text-align: center;
+	width: 600px;
+	margin: auto;
 	}
 
-.hidden {
+#dates p {
 	display: none;
+	text-align: left;
 	}
 	
 #timeline {
@@ -25,6 +28,11 @@ body {
 	text-align: center;
 	position: relative;
 	}
+#timeline_lines {
+	width: 2643px;
+	position: relative;
+	cursor: move;
+	}
 #timeline_marker {
 	position: absolute;
 	top: 0;
@@ -34,16 +42,26 @@ body {
 #timeline_background {
 	position: absolute;
 	top: 0;
-	left: 202px;
+	left: 0;
 	z-index: 10;
 	} 
 #timeline_arrow {
 	position: absolute;
-	top: 200px;
-	left: 0;
-	z-index: 11;	
+	top: 210px;
+	right: -202px;
+	z-index: 11;
+	background: url('timeline_arrow.png') top right no-repeat;	
+	height: 48px;
 	}
-	
+#timeline_shadow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 12;	
+	pointer-events: none;
+	}
+
 .yourtime {
 	font-size: 32px;
+	margin-bottom: 10px;
 	}
