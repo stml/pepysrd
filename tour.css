@@ -60,7 +60,6 @@ body {
 
 #streetview_filter {
   position: absolute;
-  background: transparent url('tour_texture.png') no-repeat;
   top: 0px;
   left: 0px;
   width: 500px;
