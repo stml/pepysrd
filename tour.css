@@ -4,20 +4,11 @@ body {
 }
 
 #content {
-  width: 900px;
+  width: 500px;
   margin: 25px auto;
   position: relative;
   overflow: hidden;
 }
-
-#leftcolumn {
-	width: 500px;
-	float: left;
-	}
-#rightcolumn {
-	width: 380px;
-	float: right;
-	}
 
 #svPanel {
   width: 500px;
@@ -77,110 +68,3 @@ body {
   height: 500px;
 }
 
-#progressBorder {
-  position: relative;
-  width: 498px;
-  height: 10px;
-  margin: 2px auto 10px;
-  border: 1px solid #000;
-  background-color: #fff;
-  overflow: hidden;
-}
-
-#progressBar {
-  position: absolute;
-  background-color: #c00;
-  width: 496px;
-  height: 8px;
-  top: 1px;
-  right:1px;
-}
-
-#map {
-  width: 380px;
-  height: 380px;
-  overflow: hidden;
-}
-
-#directions {
-  margin-top: 10px;
-  width: 380px;
-  height: 400px;
-  position: relative;
-  overflow: auto;
-  display: none;
-}
-
-.waypoint {
-  position: relative;
-  background-color: #eeeeee;
-  border: 1px solid #666666;
-  padding: 6px;
-  margin: 4px;
-  font: 10pt sans-serif;
-}
-
-.letterIcon {
-  width: 24px;
-  height: 38px;
-  background-image: none;
-}
-
-.waypointAddress {
-  position: absolute;
-  top: 17px;
-  left: 32px;
-}
-
-#summary {
-  padding: 4px;
-  font: 10pt sans-serif;
-}
-
-.dstep {
-  border-top: 1px solid #666666;
-  padding: 4px;
-  padding-left: 8px;
-  font: 10pt sans-serif;
-  margin-left: 4px;
-  margin-right: 4px;
-  cursor: pointer;
-  background-color: white;
-}
-
-.label {
-  width: 52px;
-  text-align: right;
-  font: 12pt sans-serif;
-  float: left;
-  position: relative;
-  top: 4px;
-  margin-right: 5px;
-}
-
-.input {
-  float: left;
-  width: 252px;
-  text-align: left;
-}
-
-.controls {
- clear: both;
- padding: 4px;
-}
-
-#speed {
-  float: left;
-}
-
-#buttons {
- float: right;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-td {
-  vertical-align: top;
-}

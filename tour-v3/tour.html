@@ -1,0 +1,68 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Driving Pepys Road</title>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgGTKsngvpw0m6KOhsAgHYOeKFdFNzVOs&sensor=false"></script> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>  
+<script src="tour.js" type="text/javascript"></script>
+
+<link rel='stylesheet' type='text/css' media='screen' href='tour.css' />
+
+  </head>
+  <body>
+    
+    <div id="content">
+
+	<div id="leftcolumn">
+
+		
+
+        <div id="svPanel">
+          <div id="streetview_filter"><img src="tour_texture.png" /></div>
+          <div id="streetview"></div>
+          <div id="instruction"></div>
+        </div>
+        
+        <div id="progressBorder">
+          <div id="progressBar"></div>
+        </div>
+
+	</div>
+	
+	<div id="rightcolumn">
+	
+        <div id="map"></div>
+        
+          <div class="controls">
+            <div class="label">From</div>
+            <div class="input"><input id="from" size="30" value="SW20 8NR"/></div>
+          </div><!-- .controls -->
+          <div class="controls">
+            <div class="label">To</div>
+            <div class="input"><input id="to" size="30" value="SW20 8NL"/></div>
+          </div><!-- .controls -->
+          <div class="controls">
+            <div class="label">Speed</div>
+            <div id="actions">
+              <select id="speed" onchange="setSpeed()">
+                <option value="0" SELECTED>Fast</option>
+                <option value="1">Medium</option>
+                <option value="2">Slow</option>
+              </select>
+              <div id="buttons">
+                <input type="button" value="Route" id="route" onclick="generateRoute()" />
+                <input type="button" value="Drive" id="stopgo"  onclick="startDriving()"  disabled />
+              </div>
+          </div><!-- #actions -->
+          </div><!-- .controls -->
+     
+          <div id="directions"></div>		
+     
+     </div>
+
+  </div>
+  </body>
+</html>

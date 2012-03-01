@@ -24,6 +24,23 @@ var travelledDistance = 0;
 travelledPercentage = 0;
         
 $(document).ready(function() {
+	var start = new google.maps.LatLng(51.507918,-0.128016);
+    var myOptions = {
+		zoom:3,
+    	mapTypeControl: true,
+    	mapTypeControlOptions: {
+      		style: google.maps.MapTypeControlStyle.SMALL
+    		},
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		center: start
+		}
+    map = new google.maps.Map(document.getElementById("map"), myOptions);
+    
+    // create and hide the car marker
+    carMarker = getCarMarker(start);
+    carMarker.setMap(map);
+    carMarker.setVisible(false);
+    
     var panoramaOptions = {
     	panControl: false,
     	zoomControl: false,
@@ -48,8 +65,8 @@ function generateRoute() {
 	if (carRoute) {
 		carRoute.setMap(); // clear route
 		}
-	var from = $("#from").html();
-	var to = $("#to").html();
+	var from = document.getElementById("from").value;
+	var to = document.getElementById("to").value;
 	var request = {
 		origin: from,
 		destination: to,
@@ -58,6 +75,7 @@ function generateRoute() {
 	directions.route(request, function(result, status) {
 		if (status == google.maps.DirectionsStatus.OK) {
 			directionsRoute = result;
+			console.log(directionsRoute);
 			totalDistance = (directionsRoute.routes[0].legs[0].distance.value)/1000;
 			lastLatLng = directionsRoute.routes[0].legs[0].start_location;
 			endLatLng = directionsRoute.routes[0].legs[0].end_location;
@@ -73,6 +91,17 @@ function displayRoute() {
 	/* get the first route */
 	route = directionsRoute.routes[0];
 	vertices = route.overview_path;
+	/* draw the route map */
+	carRoute = new google.maps.Polyline({
+		path: vertices,
+		strokeColor: "#CC0000",
+		strokeOpacity: 0.5,
+		strokeWeight: 5
+		});
+	carRoute.setMap(map);
+	/* center the map at the start */
+	map.setCenter(vertices[0]);
+	map.setZoom(16);
 	/* check that we have coverage along the entire route */
 	checkCoverage(0);
     }
@@ -108,13 +137,21 @@ function jumpToVertex(idx) {
 	currentLatLng = vertices[idx];
 	nextVertex = vertices[idx + 1];
 	nextVertexId = idx + 1;
+	console.log()
 	bearing = getBearingFromVertex(idx);
 	nextBearing = getBearingFromVertex(idx + 1);
 
+	setCarMarkerImage(bearing);
+	carMarker.setPosition(currentLatLng);
+    carMarker.setVisible(true);
+
 	currentVertex = vertices[idx];
 	
+	map.panTo(currentLatLng);
+	map.setZoom(16);
+	
 	pano.setPosition(currentLatLng);
-	pano.setPov({ heading: bearing, pitch: 0, zoom: 1 })
+	pano.setPov({ heading: bearing, pitch: 0, zoom: 3 })
 
 	svClient.getPanoramaByLocation(currentLatLng, 50, function(svData, svStatus) {
         if (svStatus == 'UNKNOWN_ERROR') {
@@ -133,6 +170,8 @@ function jumpToVertex(idx) {
 // when a link is called, update location of map and car marker, and prepare to advance
 function moveCar() {
 	currentLatLng = pano.getPosition();
+	carMarker.setPosition(currentLatLng);
+	map.panTo(currentLatLng);
 	if (driving) {
 		advanceTimer = setTimeout("advance()", advanceDelay * 1000);
 		}
@@ -147,12 +186,12 @@ function advance() {
 	
 	// update total distance
 	stepDistance = Math.round(currentLatLng.distanceFrom(lastLatLng)*100)/100;
-	travelledDistance = Math.round((travelledDistance + stepDistance)*100)/100;
-	travelledPercentage = Math.round((travelledDistance/totalDistance)*100);
+	travelledDistance = travelledDistance + stepDistance;
+	travelledPercentage = Math.round((travelledDistance/totalDistance)*100)/100;
 	lastLatLng = currentLatLng;
 	
 	
-	$("#progressBar").html(travelledDistance+"km travelled of "+totalDistance+"km ("+travelledPercentage+"%)");
+	console.log(travelledDistance+"km travelled of "+totalDistance+"km ("+travelledPercentage+"%)");
 	
 	var panolinks = pano.getLinks();
 	var selected = selectLink(bearing);
@@ -168,7 +207,7 @@ function advance() {
 		} 
 	else {
 		var panAngle = getHeadingDelta(pano.getPov().heading, panolinks[selected.idx].heading);
-		pano.setPov({ heading:panolinks[selected.idx].heading, pitch:0, zoom: 1 });
+		pano.setPov({ heading:panolinks[selected.idx].heading, pitch:0, zoom: 3 });
         setTimeout(function() {
 			pano.setPano(panolinks[selected.idx].pano);
 			}, panAngle * 10);
@@ -234,6 +273,7 @@ function incrementVertex() {
 		nextVertex = vertices[nextVertexId];
         bearing = getBearingFromVertex(nextVertexId - 1);
         nextBearing = getBearingFromVertex(nextVertexId);
+        setCarMarkerImage(bearing);
 		}
 	}
     
@@ -243,6 +283,10 @@ function incrementVertex() {
 // start driving and update UI
 function startDriving() {
 	hideInstruction();
+	document.getElementById("route").disabled = true;
+	document.getElementById("stopgo").value = "Stop";
+	document.getElementById("stopgo").setAttribute('onclick', 'stopDriving()'); 
+	document.getElementById("stopgo").onclick = function() { stopDriving(); }
 	driving = true;
 	advance();
 	}
@@ -254,6 +298,11 @@ function stopDriving() {
 		clearTimeout(advanceTimer);
 		advanceTimer = null;
 		}     
+	document.getElementById("route").disabled = false;
+	document.getElementById("stopgo").disabled = false;
+	document.getElementById("stopgo").value = "Drive";
+	document.getElementById("stopgo").setAttribute('onclick', 'startDriving()'); 
+	document.getElementById("stopgo").onclick = function() { startDriving(); }
 	showInstruction('<a href="#" onclick="startDriving()">Drive</a>');
 	}
 	
@@ -271,6 +320,30 @@ function showInstruction(message) {
 function hideInstruction() {
 	document.getElementById("instruction").style.display = "none";
 	}
+
+/* Arrow Car Icon
+************************************************************************************************/
+function getCarMarker(start) {
+	var car_icon = getArrowIcon(0.0);
+	return new google.maps.Marker({
+		position: start,
+		icon: car_icon
+		});
+	}
+function setCarMarkerImage(bearing) {
+	carMarker.setIcon(getArrowUrl(bearing));
+	}	
+function getArrowIcon(bearing) {
+	var icon = new google.maps.MarkerImage(getArrowUrl(bearing),
+		new google.maps.Size(24, 24),
+		new google.maps.Point(0,0),
+		new google.maps.Point(12, 12));
+	return icon;
+    }   
+function getArrowUrl(bearing) {
+	var id = (3 * Math.round(bearing / 3)) % 120;
+	return "http://maps.google.com/mapfiles/dir_" + id + ".png";
+    }
     
 /* Following functions based on those provided at:
 * http://www.movable-type.co.uk/scripts/latlong.html

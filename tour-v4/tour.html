@@ -32,10 +32,31 @@
 
 	</div>
 	
-	<div style="display:none" id="points">
-	<span id="from">SW20 8NR</span>
-	<span id="to">SW20 8NL</span>
-    </div>
+	<div id="rightcolumn">
+	
+        <div id="map"></div>
+        
+          <div class="controls">
+            <div class="label">From</div>
+            <div class="input"><input id="from" size="30" value="SW20 8NR"/></div>
+          </div><!-- .controls -->
+          <div class="controls">
+            <div class="label">To</div>
+            <div class="input"><input id="to" size="30" value="SW20 8NL"/></div>
+          </div><!-- .controls -->
+          <div class="controls">
+            <div class="label">Speed</div>
+            <div id="actions">
+              <div id="buttons">
+                <input type="button" value="Route" id="route" onclick="generateRoute()" />
+                <input type="button" value="Drive" id="stopgo"  onclick="startDriving()"  disabled />
+              </div>
+          </div><!-- #actions -->
+          </div><!-- .controls -->
+     
+          <div id="directions"></div>		
+     
+     </div>
 
   </div>
   </body>
